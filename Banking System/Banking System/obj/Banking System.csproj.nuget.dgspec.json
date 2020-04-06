@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Banking System\\Banking System\\Banking System.csproj": {}
+    "C:\\Users\\catal\\Source\\Repos\\gabriel-mocioaca\\bank-transaction-system\\Banking System\\Banking System\\Banking System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Banking System\\Banking System\\Banking System.csproj": {
+    "C:\\Users\\catal\\Source\\Repos\\gabriel-mocioaca\\bank-transaction-system\\Banking System\\Banking System\\Banking System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Banking System\\Banking System\\Banking System.csproj",
+        "projectUniqueName": "C:\\Users\\catal\\Source\\Repos\\gabriel-mocioaca\\bank-transaction-system\\Banking System\\Banking System\\Banking System.csproj",
         "projectName": "Banking System",
-        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Banking System\\Banking System\\Banking System.csproj",
+        "projectPath": "C:\\Users\\catal\\Source\\Repos\\gabriel-mocioaca\\bank-transaction-system\\Banking System\\Banking System\\Banking System.csproj",
         "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Banking System\\Banking System\\obj\\",
+        "outputPath": "C:\\Users\\catal\\Source\\Repos\\gabriel-mocioaca\\bank-transaction-system\\Banking System\\Banking System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\catal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
             }
           },
           "imports": [
