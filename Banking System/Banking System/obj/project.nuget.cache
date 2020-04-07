@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JN5+69MNl9xPZdT0vTW1HpL3oE+kmpNa1obo64ocdnjKodZb2dsZ6tLQhW3UahYgL+Srlp/ozDtI/L5h1IpsTg==",
+  "dgSpecHash": "Lde66H5t1Ex36KjqioI0Ht3yZFGLqajlcDeauKdg+E29qZZcxj/fITcu5Fg0LTEouayDCntlWsLwhagW4QzD6Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\catal\\Source\\Repos\\gabriel-mocioaca\\bank-transaction-system\\Banking System\\Banking System\\Banking System.csproj",
+  "projectFilePath": "C:\\Users\\catal\\OneDrive\\Desktop\\bank-transaction-system\\Banking System\\Banking System\\BankingSystem.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\catal\\.nuget\\packages\\entityframework\\6.4.0\\entityframework.6.4.0.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\microsoft.aspnet.identity.entityframework\\2.2.3\\microsoft.aspnet.identity.entityframework.2.2.3.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",
@@ -106,14 +109,14 @@
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\2.8.0\\microsoft.codeanalysis.workspaces.common.2.8.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.1.0\\microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
-    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore\\2.1.1\\microsoft.entityframeworkcore.2.1.1.nupkg.sha512",
-    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.1.1\\microsoft.entityframeworkcore.abstractions.2.1.1.nupkg.sha512",
-    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\2.1.1\\microsoft.entityframeworkcore.analyzers.2.1.1.nupkg.sha512",
-    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.design\\2.1.1\\microsoft.entityframeworkcore.design.2.1.1.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore\\2.1.2\\microsoft.entityframeworkcore.2.1.2.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.1.2\\microsoft.entityframeworkcore.abstractions.2.1.2.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\2.1.2\\microsoft.entityframeworkcore.analyzers.2.1.2.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.design\\2.1.2\\microsoft.entityframeworkcore.design.2.1.2.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\2.1.1\\microsoft.entityframeworkcore.inmemory.2.1.1.nupkg.sha512",
-    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\2.1.1\\microsoft.entityframeworkcore.relational.2.1.1.nupkg.sha512",
-    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\2.1.1\\microsoft.entityframeworkcore.sqlserver.2.1.1.nupkg.sha512",
-    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\2.1.1\\microsoft.entityframeworkcore.tools.2.1.1.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\2.1.2\\microsoft.entityframeworkcore.relational.2.1.2.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\2.1.2\\microsoft.entityframeworkcore.sqlserver.2.1.2.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\2.1.2\\microsoft.entityframeworkcore.tools.2.1.2.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.1.1\\microsoft.extensions.caching.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.1.1\\microsoft.extensions.caching.memory.2.1.1.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.extensions.caching.sqlserver\\2.1.1\\microsoft.extensions.caching.sqlserver.2.1.1.nupkg.sha512",
@@ -211,7 +214,7 @@
     "C:\\Users\\catal\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\system.collections.specialized\\4.3.0\\system.collections.specialized.4.3.0.nupkg.sha512",
-    "C:\\Users\\catal\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\system.composition\\1.0.31\\system.composition.1.0.31.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\system.composition.attributedmodel\\1.0.31\\system.composition.attributedmodel.1.0.31.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\system.composition.convention\\1.0.31\\system.composition.convention.1.0.31.nupkg.sha512",
@@ -300,5 +303,26 @@
     "C:\\Users\\catal\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Identity.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Identity.EntityFramework 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Identity.EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }
