@@ -1,0 +1,96 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.navbar-custom {
+    background-color: #68217a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.navbar-nav li a {
+    color: #FFFFFF
+}
+
+#TableAccounts2 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#TableAccounts2 td, #TableAccounts2 th {
+    border-radius: 13px;
+    padding: 8px;
+}
+
+#TableAccounts2 tr {
+    background-color: #b4cedd;
+}
+
+    #TableAccounts2 tr:hover {
+        background-color: #f1f1f1;
+    }
+
+#TableAccounts2 th {
+    padding: 12px;
+    text-align: left;
+    background-color: #555;
+    color: white;
+}
+
+
+.collapsible2 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-radius: 13px;
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    background-color: #d87e27;
+    color: white;
+}
+
+    .active, .collapsible2:hover {
+        background-color: #555;
+    }
+
+.content2 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
