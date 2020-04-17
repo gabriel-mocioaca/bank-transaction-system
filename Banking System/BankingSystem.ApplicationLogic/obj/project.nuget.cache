@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aDe/vOxcDFRXGTUI5s0fiOoMD1K8DraiPYWaxABCeYC2lC+yZPdU7FCcUYvihuiCYgAStD8QOmWB0dWW8/YpSg==",
+  "dgSpecHash": "WyjNQwz1aCW/4T+mR7JUYGooVocZr4vZYE1XgVd+NcLmqmbee4DQmngug7xdt4WwguqvDQh5lx2fGUilxcG9TA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\catal\\OneDrive\\Desktop\\bank-transaction-system\\Banking System\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
+  "projectFilePath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\catal\\.nuget\\packages\\entityframework\\6.4.0\\entityframework.6.4.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",

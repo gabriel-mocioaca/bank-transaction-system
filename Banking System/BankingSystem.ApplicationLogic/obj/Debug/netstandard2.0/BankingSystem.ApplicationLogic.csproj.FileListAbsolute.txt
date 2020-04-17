@@ -23,3 +23,30 @@ D:\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\obj\Deb
 D:\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfo.cs
 D:\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
 D:\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.deps.json
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.deps.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\Proiect\Gabi\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Desktop\Proiect\Gabi\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\Proiect\Gabi\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Desktop\Proiect\Gabi\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\Proiect\Gabi\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\Proiect\Gabi\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\Proiect\Gabi\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.deps.json
+C:\Users\catal\OneDrive\Desktop\Proiect\Gabi\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\Proiect\Gabi\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb

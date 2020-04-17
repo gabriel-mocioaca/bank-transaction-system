@@ -13,12 +13,17 @@
     <Compile Remove="Migrations\20200406195302_migration3.Designer.cs" />
     <Compile Remove="Migrations\20200406195635_migration1.cs" />
     <Compile Remove="Migrations\20200406195635_migration1.Designer.cs" />
+    <Compile Remove="Migrations\20200415153309_Initial.cs" />
+    <Compile Remove="Migrations\20200415153309_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200416103829_migration2.cs" />
+    <Compile Remove="Migrations\20200416103829_migration2.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>

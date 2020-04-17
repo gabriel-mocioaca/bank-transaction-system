@@ -35,3 +35,13 @@ body {
         display: none;
     }
 }
+
+.navbar-custom {
+    background-color: #68217a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.navbar-nav li a {
+    color: #FFFFFF
+}

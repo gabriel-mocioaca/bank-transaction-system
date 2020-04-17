@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Banking_System.Models;
 
+using BankingSystem.Models;
+
 namespace Banking_System.Controllers
 {
     public class HomeController : Controller
     {
         public IActionResult Index()
         {
+            
             return View();
         }
 

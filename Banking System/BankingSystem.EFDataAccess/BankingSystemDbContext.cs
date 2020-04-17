@@ -10,33 +10,32 @@ namespace BankingSystem.EFDataAccess
         {
         }
 
-        //public DbSet<User> Users { get; set; }
-        public DbSet<UserBankAccount> UserBankAccounts { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserBankAccounts> UserBankAccounts { get; set; }
         public DbSet<UserTransaction> UserTransactions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            /*modelBuilder.Entity<User>()
+            modelBuilder.Entity<User>()
                 .HasKey(t => t.UserId);
 
-            modelBuilder.Entity<UserBankAccount>()
+            modelBuilder.Entity<UserBankAccounts>()
+               .HasKey(t => t.AccountId);
+
+            modelBuilder.Entity<UserTransaction>()
+               .HasKey(t => t.TransactionId);
+
+            modelBuilder.Entity<UserBankAccounts>()
                 .HasOne(t => t.User)
                 .WithMany(t => t.UserBankAccounts)
-                .HasForeignKey(f => f.UserId); */
-
-            modelBuilder.Entity<UserBankAccount>()
-                .HasOne(a => a.Currency)
-                .WithMany(t => t.Accounts)
-                .HasForeignKey(f => f.CurrencyId);
+                .HasForeignKey(f => f.UserId); 
 
             modelBuilder.Entity<UserTransaction>()
                 .HasOne(a => a.FromAccount)
                 .WithMany(t => t.FromTransactions)
                 .HasForeignKey(f => f.FromAccountId);
-
-
 
             modelBuilder.Entity<UserTransaction>()
                 .HasOne(a => a.ToAccount)

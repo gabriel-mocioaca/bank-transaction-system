@@ -1,4 +1,4 @@
-﻿/*using Microsoft.AspNet.Identity.EntityFramework;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,29 +6,19 @@ using System.Text;
 
 namespace BankingSystem.ApplicationLogic.Data
 {
-    public class User : IdentityUser
+    public class User 
     {
         public User()
         {
-            UserBankAccounts = new List<UserBankAccount>();
+            UserBankAccounts = new List<UserBankAccounts>();
         }
-        [Required]
-        public int UserId { get; set; }
+        public string UserId { get; set; } 
+        
+        public string UserName { get; set; }
 
-        [Required]
-        public override string Email { get; set; }
-
-        [Required]
-        public string Password { get; set; }
-
-        public string FirstName { get; set; }
-
-        public string LastName { get; set; }
-
-        public string Phone { get; set; }
+        public string PhoneNo { get; set; }
 
         public string Address { get; set; }
-
-        public virtual ICollection<UserBankAccount> UserBankAccounts { get; set; }
+        public virtual ICollection<UserBankAccounts> UserBankAccounts { get; set; }
     }
-}*/
+}

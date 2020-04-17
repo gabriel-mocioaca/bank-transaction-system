@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingSystem", "Banking System\BankingSystem.csproj", "{47DF354C-095F-4AE3-BC37-965179C3AF46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSystem.ApplicationLogic", "BankingSystem.ApplicationLogic\BankingSystem.ApplicationLogic.csproj", "{02D70C41-8CA5-4F77-970D-805E633E7980}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingSystem.ApplicationLogic", "BankingSystem.ApplicationLogic\BankingSystem.ApplicationLogic.csproj", "{02D70C41-8CA5-4F77-970D-805E633E7980}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSystem.EFDataAccess", "BankingSystem.EFDataAccess\BankingSystem.EFDataAccess.csproj", "{A3957B2E-7614-4D49-BF33-661C78850A6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingSystem.EFDataAccess", "BankingSystem.EFDataAccess\BankingSystem.EFDataAccess.csproj", "{A3957B2E-7614-4D49-BF33-661C78850A6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

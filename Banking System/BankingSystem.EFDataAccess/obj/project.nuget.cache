@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TzNEiMbFmC1zS/vKlcYLQSV9IU5qRZ2PP07WXX+PfufCXb/5Y0ECAIc6P6y2vqx/rmZiVTSW3ZwOF30erO4QKA==",
+  "dgSpecHash": "T6+nIZxscx1ncAnHqLi4KzkoOSBBJB2HKLI5E4+HyRCYteo8HtCSFAXizCIpgvn6aaTG0btKcIIxZSgfojym8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\catal\\OneDrive\\Desktop\\bank-transaction-system\\Banking System\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
+  "projectFilePath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\catal\\.nuget\\packages\\entityframework\\6.4.0\\entityframework.6.4.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
@@ -27,6 +27,7 @@
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\catal\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

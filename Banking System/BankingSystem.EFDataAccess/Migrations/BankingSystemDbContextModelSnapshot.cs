@@ -19,22 +19,23 @@ namespace BankingSystem.EFDataAccess.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("BankingSystem.ApplicationLogic.Data.CurrencyType", b =>
+            modelBuilder.Entity("BankingSystem.ApplicationLogic.Data.User", b =>
                 {
-                    b.Property<int>("CurrencyId")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("UserId")
+                        .ValueGeneratedOnAdd();
 
-                    b.Property<int>("AccountId");
+                    b.Property<string>("Address");
 
-                    b.Property<string>("Currency");
+                    b.Property<string>("PhoneNo");
 
-                    b.HasKey("CurrencyId");
+                    b.Property<string>("UserName");
 
-                    b.ToTable("CurrencyType");
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("BankingSystem.ApplicationLogic.Data.UserBankAccount", b =>
+            modelBuilder.Entity("BankingSystem.ApplicationLogic.Data.UserBankAccounts", b =>
                 {
                     b.Property<int>("AccountId")
                         .ValueGeneratedOnAdd()
@@ -42,11 +43,13 @@ namespace BankingSystem.EFDataAccess.Migrations
 
                     b.Property<decimal>("Amount");
 
-                    b.Property<int>("CurrencyId");
+                    b.Property<string>("Currency");
+
+                    b.Property<string>("UserId");
 
                     b.HasKey("AccountId");
 
-                    b.HasIndex("CurrencyId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("UserBankAccounts");
                 });
@@ -76,22 +79,22 @@ namespace BankingSystem.EFDataAccess.Migrations
                     b.ToTable("UserTransactions");
                 });
 
-            modelBuilder.Entity("BankingSystem.ApplicationLogic.Data.UserBankAccount", b =>
+            modelBuilder.Entity("BankingSystem.ApplicationLogic.Data.UserBankAccounts", b =>
                 {
-                    b.HasOne("BankingSystem.ApplicationLogic.Data.CurrencyType", "Currency")
-                        .WithMany("Accounts")
-                        .HasForeignKey("CurrencyId")
+                    b.HasOne("BankingSystem.ApplicationLogic.Data.User", "User")
+                        .WithMany("UserBankAccounts")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("BankingSystem.ApplicationLogic.Data.UserTransaction", b =>
                 {
-                    b.HasOne("BankingSystem.ApplicationLogic.Data.UserBankAccount", "FromAccount")
+                    b.HasOne("BankingSystem.ApplicationLogic.Data.UserBankAccounts", "FromAccount")
                         .WithMany("FromTransactions")
                         .HasForeignKey("FromAccountId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("BankingSystem.ApplicationLogic.Data.UserBankAccount", "ToAccount")
+                    b.HasOne("BankingSystem.ApplicationLogic.Data.UserBankAccounts", "ToAccount")
                         .WithMany("ToTransactions")
                         .HasForeignKey("ToAccountId")
                         .OnDelete(DeleteBehavior.Restrict);

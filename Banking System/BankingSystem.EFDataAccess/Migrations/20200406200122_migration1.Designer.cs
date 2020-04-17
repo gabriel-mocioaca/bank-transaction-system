@@ -21,7 +21,7 @@ namespace BankingSystem.EFDataAccess.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("BankingSystem.ApplicationLogic.Data.UserBankAccount", b =>
+            modelBuilder.Entity("BankingSystem.ApplicationLogic.Data.UserBankAccounts", b =>
                 {
                     b.Property<int>("AccountId")
                         .ValueGeneratedOnAdd()
@@ -65,12 +65,12 @@ namespace BankingSystem.EFDataAccess.Migrations
 
             modelBuilder.Entity("BankingSystem.ApplicationLogic.Data.UserTransaction", b =>
                 {
-                    b.HasOne("BankingSystem.ApplicationLogic.Data.UserBankAccount", "FromAccount")
+                    b.HasOne("BankingSystem.ApplicationLogic.Data.UserBankAccounts", "FromAccount")
                         .WithMany("FromTransactions")
                         .HasForeignKey("FromAccountId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("BankingSystem.ApplicationLogic.Data.UserBankAccount", "ToAccount")
+                    b.HasOne("BankingSystem.ApplicationLogic.Data.UserBankAccounts", "ToAccount")
                         .WithMany("ToTransactions")
                         .HasForeignKey("ToAccountId")
                         .OnDelete(DeleteBehavior.Restrict);

@@ -1,0 +1,42 @@
+﻿@model BankingSystem.Models.SendViewModel
+@{
+    ViewData["Title"] = "Send";
+}
+
+
+<h2><span style="font-weight:bold">Send money to another account:</span></h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.SenderAccountId, new { @class = "col-md-2 control-label" })
+        @Html.DropDownListFor(m => m.SenderAccountId, Model.SenderAccounts, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.SenderAccountId, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.ReceiverName, new { @class = "col-md-2 control-label" })
+        @Html.TextBoxFor(m => m.ReceiverName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.ReceiverName, "", new { @class = "text-danger" })
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Amount, new { @class = "col-md-2 control-label" })
+        @Html.TextBoxFor(m => m.Amount, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Amount, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2">
+            <input type="submit" value="Send" class="btn btn-default" />
+        </div>
+
+    </div>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
