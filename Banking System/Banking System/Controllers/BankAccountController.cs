@@ -5,24 +5,30 @@ using System.Threading.Tasks;
 using BankingSystem.ApplicationLogic.Services;
 using BankingSystem.EFDataAccess;
 using BankingSystem.Models;
+using BankingSystemExchange;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banking_System.Controllers
 {
+    [Authorize]
     public class BankAccountController : Controller
     {
         private readonly UserManager<IdentityUser> userManager;
         private readonly UserTransactionsService userTransactionsService;
         private readonly UserService userService;
-       
+        private readonly ExchangeService exchangeService = new ExchangeService();
 
-        public BankAccountController(UserManager<IdentityUser> userManager, UserTransactionsService userTransactionsService, UserService userService)
+        public BankAccountController(UserManager<IdentityUser> userManager,
+            UserTransactionsService userTransactionsService,
+            UserService userService,
+            ExchangeService exchangeService)
         {
             this.userManager = userManager;
             this.userTransactionsService = userTransactionsService;
-            this.userService = userService;            
+            this.userService = userService;
+            this.exchangeService = exchangeService;
         }
 
         [HttpGet]
@@ -43,32 +49,43 @@ namespace Banking_System.Controllers
         [HttpPost]
         public ActionResult Deposit(DepositViewModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
+                return BadRequest();
+            }
 
-                string currency = "EUR";
+            string currency = "EUR";
 
-                int FromAccountId = userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency);
-                if (FromAccountId == null)
-                {
-                    userService.AddAccount(userManager.GetUserId(User).ToString(), model.Amount, currency);
-                    FromAccountId = userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency);
-                }
-                //eurAccount.Amount += viewModel.Amount;
+            int FromAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), currency);
+            if (FromAccountId == 0)
+            {
+                userService.AddUser(userManager.GetUserId(User).ToString(), userManager.GetUserName(User));
+                userService.AddAccount(userManager.GetUserId(User).ToString(), model.Amount, currency);
+                FromAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), currency);
+            }
 
-                int ToAccountId = FromAccountId;
-                decimal Amount = model.Amount;
-                var CurrencyRate = 1;
-                var TransactionDate = DateTime.Now;
-                userTransactionsService.AddTransaction(FromAccountId, ToAccountId, Amount, CurrencyRate, TransactionDate);
+            int ToAccountId = FromAccountId;
+            decimal Amount = model.Amount;
+            var CurrencyRate = 1;
+            var TransactionDate = DateTime.Now;
 
-                return RedirectToAction("Index");
+            decimal oldAmount = userService.GetAccountAmount(userManager.GetUserId(User).ToString(), currency);
+            decimal newAmount = 0;
+
+            if (oldAmount == 0)
+            {
+                newAmount = Amount;
             }
             else
             {
-                return View(model);
+                newAmount = Amount + oldAmount;
             }
 
-        }
+            userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency) , newAmount);
+            //userService.UpdateAccount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency));
+            userTransactionsService.AddTransaction(FromAccountId, ToAccountId, newAmount, CurrencyRate, TransactionDate);
+
+            return View(model);
+        }      
     }
 }

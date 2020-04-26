@@ -15,6 +15,8 @@ using Microsoft.Extensions.DependencyInjection;
 using BankingSystem.EFDataAccess;
 using BankingSystem.ApplicationLogic.Data;
 using BankingSystem.ApplicationLogic.Abstractions;
+using BankingSystem.ApplicationLogic.Services;
+using BankingSystemExchange;
 
 namespace Banking_System
 {
@@ -44,21 +46,27 @@ namespace Banking_System
             services.AddDbContext<BankingSystemDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+           
 
-            services.AddScoped<IUsersBankAccountRepository, UserBankAccountRepository>();
-            services.AddScoped<UserBankAccountRepository>();
+            services.AddTransient<IUsersBankAccountRepository, UserBankAccountRepository>();
+            services.AddTransient<UserBankAccountRepository>();
 
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<UserRepository>();
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<UserRepository>();
 
-            services.AddScoped<ITransactionsRepository, TransactionsRepository>();
-            services.AddScoped<TransactionsRepository>();
+            services.AddTransient<ITransactionsRepository, TransactionsRepository>();
+            services.AddTransient<TransactionsRepository>();
+
+            services.AddScoped<UserTransactionsService>();
+            services.AddScoped<UserService>();
+            services.AddScoped<ExchangeService>();
 
             services.AddDefaultIdentity<IdentityUser>()
+
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultUI()
                 .AddDefaultTokenProviders();
-
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

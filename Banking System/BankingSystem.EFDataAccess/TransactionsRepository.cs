@@ -11,10 +11,6 @@ namespace BankingSystem.EFDataAccess
         public TransactionsRepository(BankingSystemDbContext dbContext):base (dbContext)
         {
 
-        }
-       /* public UserTransaction SetAmount(UserTransaction userTransaction)
-        {
-            return dbContext.UserTransactions.Add(userTransaction);
-        }*/
+        }//BankingSystem.ApplicationLogic.Services.UserTransactionsService
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {}
+    "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {}
   },
   "projects": {
-    "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+    "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
         "projectName": "BankingSystem.ApplicationLogic",
-        "projectPath": "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
+        "projectPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
         "packagesPath": "C:\\Users\\Cora\\.nuget\\packages\\",
-        "outputPath": "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\obj\\",
+        "outputPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

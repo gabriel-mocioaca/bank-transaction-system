@@ -15,10 +15,11 @@ namespace BankingSystem.ApplicationLogic.Services
             this.transactionsRepository = transactionsRepository;
         }
 
-        public void  AddTransaction( int fromAccountId, int toAccountId, decimal amount, decimal currencyRate, DateTime transactionDate)
+        public void  AddTransaction( int fromAccountId , int toAccountId , decimal amount , decimal currencyRate , DateTime transactionDate)
         {
-            transactionsRepository.Add(new UserTransaction() {  FromAccountId = fromAccountId, ToAccountId = toAccountId, Amount = amount });
+            transactionsRepository.Add(new UserTransaction() {  FromAccountId = fromAccountId , ToAccountId = toAccountId , Amount = amount  });
         }
+
     }
 
 }

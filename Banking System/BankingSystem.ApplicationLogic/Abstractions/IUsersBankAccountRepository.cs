@@ -7,6 +7,6 @@ namespace BankingSystem.ApplicationLogic.Abstractions
 {
     public interface IUsersBankAccountRepository : IRepository<UserBankAccounts> 
     {
-        
+        decimal GetAccountAmount(string userId, string currency);
     }
 }

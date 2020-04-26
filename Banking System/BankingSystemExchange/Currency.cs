@@ -10,6 +10,6 @@ namespace BankingSystemExchange
         USD,
         GBP,
         BTC,
-        XRP
+        RON
     }
 }

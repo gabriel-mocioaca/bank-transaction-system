@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BankingSystem\\Banking System\\BankingSystem.csproj": {}
+    "C:\\Users\\Cora\\source\\repos\\BankingSystem\\Banking System\\BankingSystem.csproj": {}
   },
   "projects": {
-    "D:\\BankingSystem\\Banking System\\BankingSystem.csproj": {
+    "C:\\Users\\Cora\\source\\repos\\BankingSystem\\Banking System\\BankingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BankingSystem\\Banking System\\BankingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\Banking System\\BankingSystem.csproj",
         "projectName": "BankingSystem",
-        "projectPath": "D:\\BankingSystem\\Banking System\\BankingSystem.csproj",
+        "projectPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\Banking System\\BankingSystem.csproj",
         "packagesPath": "C:\\Users\\Cora\\.nuget\\packages\\",
-        "outputPath": "D:\\BankingSystem\\Banking System\\obj\\",
+        "outputPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\Banking System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,14 +30,14 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
-                "projectPath": "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
+              "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+                "projectPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
               },
-              "D:\\BankingSystem\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
-                "projectPath": "D:\\BankingSystem\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj"
+              "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
+                "projectPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj"
               },
-              "D:\\BankingSystem\\BankingSystemExchange\\BankingSystemExchange.csproj": {
-                "projectPath": "D:\\BankingSystem\\BankingSystemExchange\\BankingSystemExchange.csproj"
+              "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystemExchange\\BankingSystemExchange.csproj": {
+                "projectPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystemExchange\\BankingSystemExchange.csproj"
               }
             }
           }
@@ -109,14 +109,14 @@
         }
       }
     },
-    "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+    "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
         "projectName": "BankingSystem.ApplicationLogic",
-        "projectPath": "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
+        "projectPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
         "packagesPath": "C:\\Users\\Cora\\.nuget\\packages\\",
-        "outputPath": "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\obj\\",
+        "outputPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -179,14 +179,14 @@
         }
       }
     },
-    "D:\\BankingSystem\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
+    "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BankingSystem\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
         "projectName": "BankingSystem.EFDataAccess",
-        "projectPath": "D:\\BankingSystem\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
+        "projectPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
         "packagesPath": "C:\\Users\\Cora\\.nuget\\packages\\",
-        "outputPath": "D:\\BankingSystem\\BankingSystem.EFDataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.EFDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -205,8 +205,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
-                "projectPath": "D:\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
+              "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+                "projectPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
               }
             }
           }
@@ -237,6 +237,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             }
           },
           "imports": [
@@ -253,14 +257,14 @@
         }
       }
     },
-    "D:\\BankingSystem\\BankingSystemExchange\\BankingSystemExchange.csproj": {
+    "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystemExchange\\BankingSystemExchange.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BankingSystem\\BankingSystemExchange\\BankingSystemExchange.csproj",
+        "projectUniqueName": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystemExchange\\BankingSystemExchange.csproj",
         "projectName": "BankingSystemExchange",
-        "projectPath": "D:\\BankingSystem\\BankingSystemExchange\\BankingSystemExchange.csproj",
+        "projectPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystemExchange\\BankingSystemExchange.csproj",
         "packagesPath": "C:\\Users\\Cora\\.nuget\\packages\\",
-        "outputPath": "D:\\BankingSystem\\BankingSystemExchange\\obj\\",
+        "outputPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystemExchange\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -278,7 +282,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+                "projectPath": "C:\\Users\\Cora\\source\\repos\\BankingSystem\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

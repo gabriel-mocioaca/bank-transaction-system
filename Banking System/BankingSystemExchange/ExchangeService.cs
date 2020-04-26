@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using BankingSystem.ApplicationLogic.Data;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -47,6 +48,32 @@ namespace BankingSystemExchange
 
                 }
             }
+        }
+
+        public decimal Convert(Currency fromCurrency, Currency toCurrency, decimal fromAmmount , decimal toAmmount ,
+            UserBankAccounts fromAccount ,UserBankAccounts toAccount, decimal viewModelAmmount ,decimal viewModelRate)
+        {
+            
+            if (fromAccount.AccountId == toAccount.AccountId)
+            {
+                
+                throw new Exception("Selected currencies are the same.");
+            }
+
+            if (fromAccount.Amount < viewModelAmmount)
+            {
+                throw new Exception ("Insufficient funds.");
+                
+            }
+
+            List<CurrencyRate> rates = GetConversionRate(fromCurrency, new Currency[] { toCurrency });
+
+            viewModelRate = rates[0].Rate;
+
+            fromAccount.Amount -= viewModelAmmount;
+            toAccount.Amount += (viewModelAmmount * viewModelRate);
+
+            return toAccount.Amount;
         }
     }
 }

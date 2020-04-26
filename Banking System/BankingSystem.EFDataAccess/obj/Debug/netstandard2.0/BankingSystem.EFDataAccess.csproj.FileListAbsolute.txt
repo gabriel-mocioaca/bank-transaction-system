@@ -50,20 +50,32 @@ C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\bin\De
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csprojAssemblyReference.cache
-C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csproj.CoreCompileInputs.cache
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.AssemblyInfoInputs.cache
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.AssemblyInfo.cs
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csproj.CopyComplete
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.dll
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.pdb
-D:\BankingSystem\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.EFDataAccess.deps.json
-D:\BankingSystem\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.EFDataAccess.dll
-D:\BankingSystem\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.EFDataAccess.pdb
-D:\BankingSystem\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
-D:\BankingSystem\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
-D:\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csprojAssemblyReference.cache
-D:\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.AssemblyInfoInputs.cache
-D:\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.AssemblyInfo.cs
-D:\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csproj.CopyComplete
-D:\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.dll
-D:\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.EFDataAccess.deps.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.EFDataAccess.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.EFDataAccess.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csproj.CopyComplete
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.pdb
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.EFDataAccess.deps.json
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.EFDataAccess.dll
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.EFDataAccess.pdb
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csprojAssemblyReference.cache
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.AssemblyInfoInputs.cache
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.AssemblyInfo.cs
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.csproj.CopyComplete
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.dll
+C:\Users\Cora\source\repos\BankingSystem\BankingSystem.EFDataAccess\obj\Debug\netstandard2.0\BankingSystem.EFDataAccess.pdb
