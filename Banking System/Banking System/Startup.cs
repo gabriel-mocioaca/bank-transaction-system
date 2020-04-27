@@ -15,6 +15,8 @@ using Microsoft.Extensions.DependencyInjection;
 using BankingSystem.EFDataAccess;
 using BankingSystem.ApplicationLogic.Data;
 using BankingSystem.ApplicationLogic.Abstractions;
+using BankingSystem.ApplicationLogic.Services;
+using BankingSystemExchange;
 
 namespace Banking_System
 {
@@ -44,7 +46,7 @@ namespace Banking_System
             services.AddDbContext<BankingSystemDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-
+           
 
             services.AddTransient<IPayRepository, PayRepository>();
             services.AddTransient<PayRepository>();
@@ -55,9 +57,16 @@ namespace Banking_System
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<UserRepository>();
 
+            services.AddTransient<ITransactionsRepository, TransactionsRepository>();
+            services.AddTransient<TransactionsRepository>();
+
+            services.AddScoped<UserTransactionsService>();
+            services.AddScoped<UserService>();
             
+            services.AddScoped<ExchangeService>();
 
             services.AddDefaultIdentity<IdentityUser>()
+
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultUI()
                 .AddDefaultTokenProviders();

@@ -14,8 +14,14 @@ namespace Banking_System.Controllers
     {
         public IActionResult Index()
         {
-            
-            return View();
+            ExchangeService exchangeService = new ExchangeService();
+            List<CurrencyRate> rates = new ExchangeService().GetConversionRate(Currency.EUR, new Currency[] { Currency.GBP, Currency.USD, Currency.BTC, Currency.RON });
+            List<CurrencyRateViewModel> viewModel = rates.Select(a => new CurrencyRateViewModel
+            {
+                Currency = a.Currency.ToString(),
+                Rate = a.Rate
+            }).ToList();
+            return View(viewModel);
         }
 
         public IActionResult About()

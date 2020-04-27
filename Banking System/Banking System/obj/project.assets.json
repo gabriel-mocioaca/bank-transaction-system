@@ -12808,11 +12808,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\Banking System\\BankingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\Banking System\\BankingSystem.csproj",
       "projectName": "BankingSystem",
-      "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\Banking System\\BankingSystem.csproj",
+      "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\Banking System\\BankingSystem.csproj",
       "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\Banking System\\obj\\",
+      "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\Banking System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\catal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12828,14 +12828,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
-              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
+            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
             },
-            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
-              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj"
+            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
+              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj"
             },
-            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj": {
-              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj"
+            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj": {
+              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj"
             }
           }
         }

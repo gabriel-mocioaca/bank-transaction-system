@@ -3,39 +3,14 @@
     ViewData["Title"] = "Exchange";
 }
 
-<h2>Exchange money into another currency:</h2>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<form class="col-md-4" asp-controller="BankAccount" asp-action="Exchange" method="post">
 
-@using (Html.BeginForm())
-{
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-    <div class="form-group">
-        @Html.LabelFor(m => m.FromCurrency, new { @class = "col-md-2 control-label" })
-        @Html.DropDownListFor(m => m.FromCurrency, Model.Currencies, "-", new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.FromCurrency, "", new { @class = "text-danger" })
+    <select asp-for="FromCurrency" asp-items="Model.Currencies"></select>
+    <select asp-for="ToCurrency" asp-items="Model.Currencies"></select>
+    <input asp-for="Amount" />
+    <div class="col-2">
+        <button type="submit" class="btn btn-primary">Exchange</button>
     </div>
-
-    <div class="form-group">
-        @Html.LabelFor(m => m.ToCurrency, new { @class = "col-md-2 control-label" })
-        @Html.DropDownListFor(m => m.ToCurrency, Model.Currencies, "-", new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.ToCurrency, "", new { @class = "text-danger" })
-    </div>
-
-    <div>
-        @Html.LabelFor(m => m.Amount, new { @class = "col-md-2 control-label" })
-        @Html.TextBoxFor(m => m.Amount, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Amount, "", new { @class = "text-danger" })
-    </div>
-
-    <div class="form-group">
-        <div class="col-md-offset-2">
-            <input type="submit" value="Confirm" class="btn btn-default" />
-        </div>
-
-    </div>
-}
-
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+</form>
 

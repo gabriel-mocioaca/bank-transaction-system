@@ -11,7 +11,7 @@ namespace BankingSystem.ApplicationLogic.Services
     {
         private IUserRepository userRepository;
         private IUsersBankAccountRepository userBankAccountRepository;
-        public UserService (IUserRepository userRepository)
+        public UserService (IUserRepository userRepository , IUsersBankAccountRepository userBankAccountRepository)
         {
             this.userRepository = userRepository;
             this.userBankAccountRepository = userBankAccountRepository;
@@ -22,7 +22,14 @@ namespace BankingSystem.ApplicationLogic.Services
             return account;
         }
 
-        public int GetAccountByCurrency(string userId, string currency)
+        public int GetAccountIdByCurrency(string userId, string currency)
+        {
+            var userBankAccount = userRepository.GetAccountIdByCurrency(userId, currency);
+
+            return userBankAccount;
+        }
+
+        public UserBankAccounts GetAccountByCurrency(string userId, string currency)
         {
             var userBankAccount = userRepository.GetAccountByCurrency(userId, currency);
 
@@ -39,7 +46,7 @@ namespace BankingSystem.ApplicationLogic.Services
 
         public void AddAccount(string userId, decimal amount , string currency  )
         {
-            userBankAccountRepository.Add(new UserBankAccounts() { Amount = amount , Currency = currency });
+            userBankAccountRepository.Add(new UserBankAccounts() { UserId = userId , Amount = amount, Currency = currency }) ;
         }
 
         public User GetUserByName(string receiverName)
@@ -48,5 +55,44 @@ namespace BankingSystem.ApplicationLogic.Services
 
             return user;
         }
+
+        public void AddUser(string userId , string userName )
+        {
+            userRepository.Add(new User() {UserId = userId , UserName = userName});
+        }
+
+        public decimal GetAccountAmount(string userId , string currency)
+        {
+            return userBankAccountRepository.GetAccountAmount( userId,  currency);
+        }
+
+        public void UpdateAccount(UserBankAccounts userAccount)
+        {
+            userBankAccountRepository.Update(userAccount);
+        }
+       
+        public void UpdateAmount( UserBankAccounts userAccount , decimal amount )
+        {
+            userAccount.Amount = amount;
+            userBankAccountRepository.Update(userAccount);
+        }
+
+        public string GetUserId(User receiverUser)
+        {
+            string userId = userRepository.GetUserId(receiverUser);
+            return userId;
+        }
+
+        public int GetAccountIdByUserIdAndCurrency(string receiverUserId, string currency)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object GetAllDeposits(IList<UserBankAccounts> allAccounts)
+        {
+            throw new NotImplementedException();
+        }
+
+        
     }
 }

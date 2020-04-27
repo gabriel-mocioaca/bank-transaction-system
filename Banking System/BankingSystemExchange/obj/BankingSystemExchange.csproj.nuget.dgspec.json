@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj": {}
+    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj": {}
   },
   "projects": {
-    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
+        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
         "projectName": "BankingSystem.ApplicationLogic",
-        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
+        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
         "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystem.ApplicationLogic\\obj\\",
+        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystem.ApplicationLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\catal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj": {
+    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj",
+        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj",
         "projectName": "BankingSystemExchange",
-        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj",
+        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystemExchange\\BankingSystemExchange.csproj",
         "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystemExchange\\obj\\",
+        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystemExchange\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\catal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,8 +94,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
-                "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
+              "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+                "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Eu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
               }
             }
           }
