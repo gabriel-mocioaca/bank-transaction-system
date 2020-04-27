@@ -20,18 +20,27 @@ namespace BankingSystem.EFDataAccess
             UserBankAccounts account = dbContext.UserBankAccounts.FirstOrDefault(a => a.UserId == UserId && a.Currency == currency);
                 return account;
         }
-        public int GetAccountByCurrency(string userId, string currency)
+        public int GetAccountIdByCurrency(string userId, string currency)
         {
-            
             List<UserBankAccounts> currentUserBankAccouts = dbContext.UserBankAccounts.Where(u => u.UserId == userId).ToList();
             foreach (var item in currentUserBankAccouts)
             {
                 if (item.Currency == currency)
                     return item.AccountId;
             }
-            throw new Exception("");
+            return 0;
         }
-
+        
+        public UserBankAccounts GetAccountByCurrency(string userId, string currency)
+        {
+            List<UserBankAccounts> currentUserBankAccouts = dbContext.UserBankAccounts.Where(u => u.UserId == userId).ToList();
+            foreach (var item in currentUserBankAccouts)
+            {
+                if (item.Currency == currency)
+                    return item;
+            }
+            return null;
+        }
         public IList<UserBankAccounts> GetAllAccounts(string userId)
         {
             List<UserBankAccounts> currentUserBankAccouts = dbContext.UserBankAccounts.Where(u => u.UserId == userId).ToList();
@@ -43,6 +52,19 @@ namespace BankingSystem.EFDataAccess
             return dbContext.Users.Where(user => user.UserName == userName).SingleOrDefault(); ;
         }
 
+        public string GetUserId(User receiverUser)
+        {
+            return receiverUser.UserId;
+        }
 
+        public string GetUserIdByName(string receiverName)
+        {
+            throw new NotImplementedException();
+        }
+
+        object IUserRepository.GetUserIdByName(string receiverName)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

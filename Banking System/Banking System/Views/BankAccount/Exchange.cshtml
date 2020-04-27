@@ -1,0 +1,16 @@
+﻿@model BankingSystem.Models.ExchangeViewModel
+@{
+    ViewData["Title"] = "Exchange";
+}
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<form class="col-md-4" asp-controller="BankAccount" asp-action="Exchange" method="post">
+
+    <select asp-for="FromCurrency" asp-items="Model.Currencies"></select>
+    <select asp-for="ToCurrency" asp-items="Model.Currencies"></select>
+    <input asp-for="Amount" />
+    <div class="col-2">
+        <button type="submit" class="btn btn-primary">Exchange</button>
+    </div>
+</form>
+

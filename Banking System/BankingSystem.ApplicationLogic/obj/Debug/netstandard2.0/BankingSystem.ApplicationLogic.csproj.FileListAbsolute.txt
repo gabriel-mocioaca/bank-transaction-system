@@ -41,12 +41,21 @@ C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\ob
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfo.cs
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
-C:\Users\catal\OneDrive\Desktop\Proiect\Prtcu\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.deps.json
-C:\Users\catal\OneDrive\Desktop\Proiect\Prtcu\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
-C:\Users\catal\OneDrive\Desktop\Proiect\Prtcu\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
-C:\Users\catal\OneDrive\Desktop\Proiect\Prtcu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csprojAssemblyReference.cache
-C:\Users\catal\OneDrive\Desktop\Proiect\Prtcu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csproj.CoreCompileInputs.cache
-C:\Users\catal\OneDrive\Desktop\Proiect\Prtcu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfoInputs.cache
-C:\Users\catal\OneDrive\Desktop\Proiect\Prtcu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfo.cs
-C:\Users\catal\OneDrive\Desktop\Proiect\Prtcu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
-C:\Users\catal\OneDrive\Desktop\Proiect\Prtcu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.deps.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.deps.json
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystem.ApplicationLogic\bin\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystem.ApplicationLogic\obj\Debug\netstandard2.0\BankingSystem.ApplicationLogic.pdb

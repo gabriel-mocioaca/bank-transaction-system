@@ -9,3 +9,26 @@
 
 </div>
 
+<div class="row">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+
+                <th scope="col">From</th>
+                <th scope="col">To</th>
+                <th scope="col">Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (BankingSystem.Models.CurrencyRateViewModel rate in Model)
+            {
+                <tr>
+                    <td>EUR</td>
+                    <td>@rate.Currency</td>
+                    <td>@rate.Rate</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

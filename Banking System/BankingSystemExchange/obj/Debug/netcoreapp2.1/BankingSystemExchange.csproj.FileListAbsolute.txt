@@ -10,3 +10,27 @@ C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystemExchange\bin\Debug\n
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.pdb
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.csproj.CopyComplete
 C:\Users\catal\OneDrive\Desktop\New folder (2)\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystemExchange.deps.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystemExchange.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystemExchange.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.csproj.CopyComplete
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.pdb
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystemExchange.deps.json
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystemExchange.dll
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystemExchange.pdb
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.csproj.CopyComplete
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.dll
+C:\Users\catal\OneDrive\Desktop\Proiect2\Ptecu\BankingSystemExchange\obj\Debug\netcoreapp2.1\BankingSystemExchange.pdb

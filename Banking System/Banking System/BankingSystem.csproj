@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BankingSystem.ApplicationLogic\BankingSystem.ApplicationLogic.csproj" />
     <ProjectReference Include="..\BankingSystem.EFDataAccess\BankingSystem.EFDataAccess.csproj" />
+    <ProjectReference Include="..\BankingSystemExchange\BankingSystemExchange.csproj" />
   </ItemGroup>
 
   <ItemGroup>

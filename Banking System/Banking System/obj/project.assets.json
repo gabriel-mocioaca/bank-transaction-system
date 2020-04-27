@@ -4676,6 +4676,20 @@
         "runtime": {
           "bin/placeholder/BankingSystem.EFDataAccess.dll": {}
         }
+      },
+      "BankingSystemExchange/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "BankingSystem.ApplicationLogic": "1.0.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/BankingSystemExchange.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankingSystemExchange.dll": {}
+        }
       }
     }
   },
@@ -12765,12 +12779,18 @@
       "type": "project",
       "path": "../BankingSystem.EFDataAccess/BankingSystem.EFDataAccess.csproj",
       "msbuildProject": "../BankingSystem.EFDataAccess/BankingSystem.EFDataAccess.csproj"
+    },
+    "BankingSystemExchange/1.0.0": {
+      "type": "project",
+      "path": "../BankingSystemExchange/BankingSystemExchange.csproj",
+      "msbuildProject": "../BankingSystemExchange/BankingSystemExchange.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "BankingSystem.ApplicationLogic >= 1.0.0",
       "BankingSystem.EFDataAccess >= 1.0.0",
+      "BankingSystemExchange >= 1.0.0",
       "EntityFramework >= 6.4.0",
       "Microsoft.AspNet.Identity.Core >= 2.2.3",
       "Microsoft.AspNetCore.App >= 2.1.1",
@@ -12788,11 +12808,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\Banking System\\BankingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\Banking System\\BankingSystem.csproj",
       "projectName": "BankingSystem",
-      "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\Banking System\\BankingSystem.csproj",
+      "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\Banking System\\BankingSystem.csproj",
       "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\Banking System\\obj\\",
+      "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\Banking System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\catal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12808,11 +12828,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
-              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
+            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
             },
-            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
-              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj"
+            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
+              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj"
+            },
+            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystemExchange\\BankingSystemExchange.csproj": {
+              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystemExchange\\BankingSystemExchange.csproj"
             }
           }
         }

@@ -16,7 +16,13 @@ namespace BankingSystem.Models
 
         public decimal Rate { get; set; }
 
-        public List<SelectListItem> Currencies { get; set; } = new List<SelectListItem>();
-
+        public string Currency { get; set; }
+        public List<SelectListItem> Currencies { get; set; } = new List<SelectListItem>
+        {
+            new SelectListItem { Value = "USD", Text = "USD" },
+            new SelectListItem { Value = "EUR", Text = "EUR" },
+            new SelectListItem { Value = "RON", Text = "RON"  },
+        };
     }
 }
+

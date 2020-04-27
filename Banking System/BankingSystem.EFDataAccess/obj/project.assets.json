@@ -3252,11 +3252,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
       "projectName": "BankingSystem.EFDataAccess",
-      "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
+      "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
       "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\BankingSystem.EFDataAccess\\obj\\",
+      "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystem.EFDataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\catal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3272,8 +3272,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
-              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
+            "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+              "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
             }
           }
         }

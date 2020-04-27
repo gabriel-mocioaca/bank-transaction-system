@@ -1,227 +1,246 @@
-﻿@model List<BankingSystem.Models.TransactionViewModel>
-@{
-    ViewBag.Title = "Transactions";
+﻿@*@model List<BankingSystem.ApplicationLogic.Data.UserTransaction>
+
+@foreach (var item in Model)
+{
+    <h1>@item.Amount</h1>
+}*@
 
 
-    string emptyList = "No transactions in this section yet.";
 
-    List<BankingSystem.Models.TransactionViewModel>
-    deposits = Model.Where(t => t.FromUser == t.ToUser && t.FromCurrency == t.ToCurrency).ToList();
-    List<BankingSystem.Models.TransactionViewModel>
-        exchanges = Model.Where(a => a.FromUser == a.ToUser && a.FromCurrency != a.ToCurrency).ToList();
-    List<BankingSystem.Models.TransactionViewModel>
-        incomingTransactions = Model.Where(a => a.FromUser != a.ToUser && a.ToUser == User.Identity.Name).ToList();
-    List<BankingSystem.Models.TransactionViewModel>
-        outgoingTransactions = Model.Where(a => a.FromUser != a.ToUser && a.FromUser == User.Identity.Name).ToList();
-    List<BankingSystem.Models.TransactionViewModel> profit = Model.Where(t => t.FromUser == t.ToUser && t.FromCurrency != t.ToCurrency).ToList();
 
-}
 
-<h2>Your account's transactions:</h2>
 
-<body>
 
-    <button class="collapsible">
-        Deposits
-    </button>
-    <div class="content" style="background-color:white">
-        <table id="TableAccounts">
-            @{
-                var indexDeposits = deposits.Count() - 1;
-                if (indexDeposits > 0)
-                {
-                    <tr>
-                        <th>Date</th>
-                        <th>Amount</th>
-                    </tr>
 
-                    while (indexDeposits > 0)
-                    {
 
-                        <tr>
-                            <td> @deposits[indexDeposits].DateTime</td>
-                            <td style="background-color:#99FF99"> @deposits[indexDeposits].Amount (@deposits[indexDeposits].ToCurrency)</td>
 
-                        </tr>
-                        indexDeposits--;
 
-                    }
-                }
-                else
-                {
-                    @emptyList;
-                }
-            }
-        </table>
-    </div>
 
-    <button class="collapsible">
-        Exchanges
-    </button>
-    <div class="content" style="background-color:white">
-        <table id="TableAccounts">
-            @{
-                var indexExchanges = exchanges.Count() - 1;
-                if (indexExchanges > 0)
-                {
-                    <tr>
-                        <th>Date</th>
-                        <th>From Currency</th>
-                        <th>To Currency</th>
-                    </tr>
 
-                    while (indexExchanges != 0)
+@model List<BankingSystem.Models.TransactionViewModel>
+    @{
+        ViewBag.Title = "Transactions";
+
+
+        string emptyList = "No transactions in this section yet.";
+
+        List<BankingSystem.Models.TransactionViewModel>
+        deposits = Model.Where(t => t.FromUser == t.ToUser && t.FromCurrency == t.ToCurrency).ToList();
+        List<BankingSystem.Models.TransactionViewModel>
+            exchanges = Model.Where(a => a.FromUser == a.ToUser && a.FromCurrency != a.ToCurrency).ToList();
+        List<BankingSystem.Models.TransactionViewModel>
+            incomingTransactions = Model.Where(a => a.FromUser != a.ToUser && a.ToUser == User.Identity.Name).ToList();
+        List<BankingSystem.Models.TransactionViewModel>
+            outgoingTransactions = Model.Where(a => a.FromUser != a.ToUser && a.FromUser == User.Identity.Name).ToList();
+        List<BankingSystem.Models.TransactionViewModel> profit = Model.Where(t => t.FromUser == t.ToUser && t.FromCurrency != t.ToCurrency).ToList();
+
+    }
+
+    <h2>Your account's transactions:</h2>
+
+    <body>
+
+        <button class="collapsible">
+            Deposits
+        </button>
+        <div class="content" style="background-color:white">
+            <table id="TableAccounts">
+                @{
+                    var indexDeposits = deposits.Count() - 1;
+                    if (indexDeposits > 0)
                     {
                         <tr>
-                            <td> @exchanges[indexExchanges].DateTime</td>
-                            <td style="background-color:#C0392B">  @exchanges[indexExchanges].Amount (@exchanges[indexExchanges].FromCurrency)</td>
-                            <td style="background-color:#99FF99"> @(exchanges[indexExchanges].Amount * exchanges[indexExchanges].Rate / 10000) (@exchanges[indexExchanges].ToCurrency)</td>
+                            <th>Date</th>
+                            <th>Amount</th>
                         </tr>
-                        indexExchanges--;
-                    }
-                }
-                else
-                {
-                    @emptyList;
-                }
-            }
-        </table>
-    </div>
 
-    <button class="collapsible2">
-        Incoming Transactions
-    </button>
-    <div class="content" style="background-color:white">
-        <table id="TableAccounts2">
-            @{
-                var indexIncomingTransactions = incomingTransactions.Count() - 1;
-                if (indexIncomingTransactions > 0)
-                {
-
-                    <tr>
-                        <th>Date</th>
-                        <th>From</th>
-                        <th>Amount</th>
-                    </tr>
-
-                    while (indexIncomingTransactions > 0)
-                    {
-
-                        <tr>
-                            <td> @incomingTransactions[indexIncomingTransactions].DateTime</td>
-                            <td>@incomingTransactions[indexIncomingTransactions].FromUser</td>
-                            <td style="background-color:#8ee980"> @incomingTransactions[indexIncomingTransactions].Amount (@incomingTransactions[indexIncomingTransactions].ToCurrency)</td>
-                        </tr>
-                        indexIncomingTransactions--;
-
-                    }
-                }
-                else
-                {
-                    @emptyList;
-                }
-            }
-        </table>
-    </div>
-    <button class="collapsible2">
-        Outgoing Transactions
-    </button>
-    <div class="content2" style="background-color:white">
-        <table id="TableAccounts2">
-            @{
-                var indexOutgoingTrasactions = outgoingTransactions.Count() - 1;
-                if (indexOutgoingTrasactions > 0)
-                {
-                    <tr>
-                        <th>Date</th>
-                        <th>To</th>
-                        <th>Amount</th>
-                    </tr>
-
-
-                    while (indexOutgoingTrasactions > 0)
-                    {
-
-                        <tr>
-                            <td> @outgoingTransactions[indexOutgoingTrasactions].DateTime</td>
-                            <td>@outgoingTransactions[indexOutgoingTrasactions].ToUser</td>
-                            <td style="background-color:#ef3636"> @outgoingTransactions[indexOutgoingTrasactions].Amount (@outgoingTransactions[indexOutgoingTrasactions].ToCurrency)</td>
-                        </tr>
-                        indexOutgoingTrasactions--;
-                    }
-                }
-                else
-                {
-                    @emptyList;
-                }
-            }
-        </table>
-    </div>
-    <button class="collapsible2">
-        Profit
-    </button>
-    <div class="content2" style="background-color:white">
-        <table id="TableAccounts2">
-            @{
-                <thead>
-
-                    <tr>
-
-                        <th>From Currency</th>
-                        <th>To Currency</th>
-                        <th>Rate</th>
-                        <th>RateNow</th>
-                        <th>Profit</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-
-                    @foreach (var item in Model)
-                    {
-                        if (item.FromUser == User.Identity.Name && item.FromUser == item.ToUser && item.Rate != 0)
-
+                        while (indexDeposits > 0)
                         {
+
                             <tr>
-
-                                <td>@item.FromCurrency</td>
-                                <td>@item.ToCurrency</td>
-                                <td>@item.Rate</td>
-                                <td>@item.RateNow</td>
-                                @if (@item.Rate / @item.RateNow >= 1)
-                                {
-                                    <td style="background-color: #99FF99">Good</td>
-                                }
-                                else
-                                {
-                                    <td style="background-color: #C0392B">Bad</td>
-                                }
-
+                                <td> @deposits[indexDeposits].DateTime</td>
+                                <td style="background-color:#99FF99"> @deposits[indexDeposits].Amount (@deposits[indexDeposits].ToCurrency)</td>
 
                             </tr>
+                            indexDeposits--;
+
                         }
                     }
-
-
-                </tbody>
-            }
-        </table>
-    </div>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible2");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content2 = this.nextElementSibling;
-                if (content2.style.display === "block") {
-                    content2.style.display = "none";
-                } else {
-                    content2.style.display = "block";
+                    else
+                    {
+                        @emptyList;
+                    }
                 }
-            });
-        }
-    </script>
-</body>
+            </table>
+        </div>
+
+        <button class="collapsible">
+            Exchanges
+        </button>
+        <div class="content" style="background-color:white">
+            <table id="TableAccounts">
+                @{
+                    var indexExchanges = exchanges.Count() - 1;
+                    if (indexExchanges > 0)
+                    {
+                        <tr>
+                            <th>Date</th>
+                            <th>From Currency</th>
+                            <th>To Currency</th>
+                        </tr>
+
+                        while (indexExchanges != 0)
+                        {
+                            <tr>
+                                <td> @exchanges[indexExchanges].DateTime</td>
+                                <td style="background-color:#C0392B">  @exchanges[indexExchanges].Amount (@exchanges[indexExchanges].FromCurrency)</td>
+                                <td style="background-color:#99FF99"> @(exchanges[indexExchanges].Amount * exchanges[indexExchanges].Rate / 10000) (@exchanges[indexExchanges].ToCurrency)</td>
+                            </tr>
+                            indexExchanges--;
+                        }
+                    }
+                    else
+                    {
+                        @emptyList;
+                    }
+                }
+            </table>
+        </div>
+
+        <button class="collapsible2">
+            Incoming Transactions
+        </button>
+        <div class="content" style="background-color:white">
+            <table id="TableAccounts2">
+                @{
+                    var indexIncomingTransactions = incomingTransactions.Count() - 1;
+                    if (indexIncomingTransactions > 0)
+                    {
+
+                        <tr>
+                            <th>Date</th>
+                            <th>From</th>
+                            <th>Amount</th>
+                        </tr>
+
+                        while (indexIncomingTransactions > 0)
+                        {
+
+                            <tr>
+                                <td> @incomingTransactions[indexIncomingTransactions].DateTime</td>
+                                <td>@incomingTransactions[indexIncomingTransactions].FromUser</td>
+                                <td style="background-color:#8ee980"> @incomingTransactions[indexIncomingTransactions].Amount (@incomingTransactions[indexIncomingTransactions].ToCurrency)</td>
+                            </tr>
+                            indexIncomingTransactions--;
+
+                        }
+                    }
+                    else
+                    {
+                        @emptyList;
+                    }
+                }
+            </table>
+        </div>
+        <button class="collapsible2">
+            Outgoing Transactions
+        </button>
+        <div class="content2" style="background-color:white">
+            <table id="TableAccounts2">
+                @{
+                    var indexOutgoingTrasactions = outgoingTransactions.Count() - 1;
+                    if (indexOutgoingTrasactions > 0)
+                    {
+                        <tr>
+                            <th>Date</th>
+                            <th>To</th>
+                            <th>Amount</th>
+                        </tr>
+
+
+                        while (indexOutgoingTrasactions > 0)
+                        {
+
+                            <tr>
+                                <td> @outgoingTransactions[indexOutgoingTrasactions].DateTime</td>
+                                <td>@outgoingTransactions[indexOutgoingTrasactions].ToUser</td>
+                                <td style="background-color:#ef3636"> @outgoingTransactions[indexOutgoingTrasactions].Amount (@outgoingTransactions[indexOutgoingTrasactions].ToCurrency)</td>
+                            </tr>
+                            indexOutgoingTrasactions--;
+                        }
+                    }
+                    else
+                    {
+                        @emptyList;
+                    }
+                }
+            </table>
+        </div>
+        @*<button class="collapsible2">
+            Profit
+        </button>
+        <div class="content2" style="background-color:white">
+            <table id="TableAccounts2">
+                @{
+                    <thead>
+
+                        <tr>
+
+                            <th>From Currency</th>
+                            <th>To Currency</th>
+                            <th>Rate</th>
+                            <th>RateNow</th>
+                            <th>Profit</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                            if (item.FromUser == User.Identity.Name && item.FromUser == item.ToUser && item.Rate != 0)
+
+                            {
+                                <tr>
+
+                                    <td>@item.FromCurrency</td>
+                                    <td>@item.ToCurrency</td>
+                                    <td>@item.Rate</td>
+                                    <td>@item.RateNow</td>
+                                    @if (@item.Rate / @item.RateNow >= 1)
+                                    {
+                                        <td style="background-color: #99FF99">Good</td>
+                                    }
+                                    else
+                                    {
+                                        <td style="background-color: #C0392B">Bad</td>
+                                    }
+
+
+                                </tr>
+                            }
+                        }
+
+
+                    </tbody>
+                }
+            </table>
+        </div>*@
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible2");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content2 = this.nextElementSibling;
+                    if (content2.style.display === "block") {
+                        content2.style.display = "none";
+                    } else {
+                        content2.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </body>

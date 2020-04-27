@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZDoWF0aakEHNimVuQ5++WnPDoPGEHMNC0hK8aPJxukLJ0lxBfqZhxn8ZFM/gwo2w7qyUu3buDFsD6Oep8pF6ew==",
+  "dgSpecHash": "B2TzF+dVc5ZxaAXWwwgrIs6QpArAwCs9fYiFUFa9+K1NJgUer8d9qyl8j2g3ww+BeHid58twBB91jNqpwUcHwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Prtcu\\Banking System\\BankingSystem.csproj",
+  "projectFilePath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Ptecu\\Banking System\\BankingSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\catal\\.nuget\\packages\\entityframework\\6.4.0\\entityframework.6.4.0.nupkg.sha512",
     "C:\\Users\\catal\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
