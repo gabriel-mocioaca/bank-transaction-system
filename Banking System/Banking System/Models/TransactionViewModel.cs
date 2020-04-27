@@ -15,5 +15,9 @@ namespace BankingSystem.Models
         public string FromCurrency { get; set; }
         public string ToCurrency { get; set; }
         public decimal RateNow { get; set; }
+        public List<TransactionViewModel> allDeposits { get; set; }
+        public List<TransactionViewModel> allExchanges { get; set; }
+        public List<TransactionViewModel> allTransactionsSend { get; set; }
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\Banking System\\BankingSystem.csproj": {}
+    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\Banking System\\BankingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\Banking System\\BankingSystem.csproj": {
+    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\Banking System\\BankingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\Banking System\\BankingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\Banking System\\BankingSystem.csproj",
         "projectName": "BankingSystem",
-        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\Banking System\\BankingSystem.csproj",
+        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\Banking System\\BankingSystem.csproj",
         "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\Banking System\\obj\\",
+        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\Banking System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\catal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,11 +27,14 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
-                "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
+              "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+                "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
               },
-              "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
-                "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj"
+              "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
+                "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj"
+              },
+              "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystemExchange\\BankingSystemExchange.csproj": {
+                "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystemExchange\\BankingSystemExchange.csproj"
               }
             }
           }
@@ -103,14 +106,14 @@
         }
       }
     },
-    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
+        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
         "projectName": "BankingSystem.ApplicationLogic",
-        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
+        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj",
         "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.ApplicationLogic\\obj\\",
+        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.ApplicationLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\catal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -170,14 +173,14 @@
         }
       }
     },
-    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
+    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
         "projectName": "BankingSystem.EFDataAccess",
-        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
+        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.EFDataAccess\\BankingSystem.EFDataAccess.csproj",
         "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.EFDataAccess\\obj\\",
+        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.EFDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\catal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -193,8 +196,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
-                "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
+              "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+                "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
               }
             }
           }
@@ -224,6 +227,69 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystemExchange\\BankingSystemExchange.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystemExchange\\BankingSystemExchange.csproj",
+        "projectName": "BankingSystemExchange",
+        "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystemExchange\\BankingSystemExchange.csproj",
+        "packagesPath": "C:\\Users\\catal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystemExchange\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\catal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj": {
+                "projectPath": "C:\\Users\\catal\\OneDrive\\Desktop\\Proiect2\\Gabi\\BankingSystem.ApplicationLogic\\BankingSystem.ApplicationLogic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
               "autoReferenced": true
             },
             "Newtonsoft.Json": {
