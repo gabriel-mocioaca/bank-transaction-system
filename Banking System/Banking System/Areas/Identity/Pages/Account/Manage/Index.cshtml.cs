@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using BankingSystem.ApplicationLogic.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -13,15 +14,19 @@ namespace BankingSystem.Areas.Identity.Pages.Account.Manage
 {
     public partial class IndexModel : PageModel
     {
+        private readonly UserService userService;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly IEmailSender _emailSender;
 
         public IndexModel(
+            UserService userService,
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
             IEmailSender emailSender)
+
         {
+            this.userService = userService;
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
@@ -46,6 +51,9 @@ namespace BankingSystem.Areas.Identity.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
+
+            [Display(Name = "Your Address")]
+            public string Address { get; set; }
         }
 
         public async Task<IActionResult> OnGetAsync()
@@ -59,13 +67,15 @@ namespace BankingSystem.Areas.Identity.Pages.Account.Manage
             var userName = await _userManager.GetUserNameAsync(user);
             var email = await _userManager.GetEmailAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+            var address = userService.GetAddress(_userManager.GetUserId(User).ToString());
 
             Username = userName;
 
             Input = new InputModel
             {
                 Email = email,
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber,
+                Address = address
             };
 
             IsEmailConfirmed = await _userManager.IsEmailConfirmedAsync(user);
@@ -79,6 +89,8 @@ namespace BankingSystem.Areas.Identity.Pages.Account.Manage
             {
                 return Page();
             }
+
+            userService.SetAddress(_userManager.GetUserId(User).ToString() , Input.Address);
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)

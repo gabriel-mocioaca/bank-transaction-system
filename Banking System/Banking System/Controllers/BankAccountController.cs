@@ -43,14 +43,17 @@ namespace Banking_System.Controllers
             var allAccounts = userService.GetAllAccounts(userManager.GetUserId(User).ToString());
             return View();
         }
+        
+
 
         [HttpGet]
         public ActionResult Deposit()
         {
-
-            return View();
+            var model = new DepositViewModel();
+            return View(model);
         }
 
+        
         [HttpPost]
         public ActionResult Deposit(DepositViewModel model)
         {
@@ -88,12 +91,13 @@ namespace Banking_System.Controllers
 
 
 
-            userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency) , newAmount);
-            
+            userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency), newAmount);
+
             userTransactionsService.AddTransaction(FromAccountId, ToAccountId, newAmount, CurrencyRate, TransactionDate);
 
             return View(model);
         }
+        
         [HttpGet]
         public ActionResult Send()
         {
@@ -105,8 +109,6 @@ namespace Banking_System.Controllers
         [HttpPost]
         public ActionResult Send([FromForm]SendViewModel model)
         {
-            
-
             string currency = model.SenderAccountId;
             var senderAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), currency);
             var receiverName = model.ReceiverName;
@@ -130,7 +132,6 @@ namespace Banking_System.Controllers
             DateTime transactionDate = DateTime.Now;
             var amount = model.Amount;
 
-
             decimal oldAmountOfReceiver = userService.GetAccountAmount(receiverUserId, currency);
             decimal newAmountOfReceiver = amount + oldAmountOfReceiver;
 
@@ -148,20 +149,20 @@ namespace Banking_System.Controllers
 
             userTransactionsService.AddTransaction(senderAccountId, receiverAccountId, amount, currencyRate, transactionDate);
 
-            return Redirect(Url.Action("Send", "BankAccount"));
+            ViewBag.message = "Transaction successful!";
+
+            return View(model);
+
         }
 
         
-        
-
-       
         public ActionResult Transactions()
         {
             
             var currentUSer = userManager.GetUserId(User).ToString();
             var allAccounts = userService.GetAllAccounts(userManager.GetUserId(User).ToString());
 
-           
+            
             List<UserTransaction> userTransactions = new List<UserTransaction>();
 
             foreach (var item in allAccounts)
@@ -207,8 +208,11 @@ namespace Banking_System.Controllers
             string toCurrencyS = model.ToCurrency.ToString();
             var CurrentUserId = userManager.GetUserId(User).ToString();
             var transactionDate = DateTime.Now;
-            
 
+            if (fromCurrencyS == toCurrencyS)
+            {
+                return BadRequest("Same currency");
+            }
 
             var senderAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), model.FromCurrency.ToString());
             
@@ -256,7 +260,103 @@ namespace Banking_System.Controllers
             
             userTransactionsService.AddTransaction(senderAccountId , toAccountId, newAmount, model.Rate, transactionDate);
 
+            ViewBag.message = "Transaction successful!";
+
             return Redirect(Url.Action("Exchange", "BankAccount"));
+        }
+        
+        [HttpGet]
+        public ActionResult PayService()
+        {
+            var model = new PayForAServiceViewModel();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult PayService([FromForm]PayForAServiceViewModel model)
+        {
+            string currency = model.SenderAccountId;
+            var senderAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), currency);
+            var receiverName = model.ReceiverName;
+
+            var receiverUser = userService.GetUserByName(receiverName);
+            if (receiverUser == null)
+            {
+                return BadRequest("User not Found");
+            }
+
+            var receiverUserId = userService.GetUserId(receiverUser);
+
+            int receiverAccountId = userService.GetAccountIdByCurrency(receiverUserId, currency);
+
+            if (receiverAccountId == 0)
+            {
+                return BadRequest("User does not have account");
+            }
+
+            var currencyRate = 1;
+            DateTime transactionDate = DateTime.Now;
+            var amount = model.Amount;
+
+            decimal oldAmountOfReceiver = userService.GetAccountAmount(receiverUserId, currency);
+            decimal newAmountOfReceiver = amount + oldAmountOfReceiver;
+
+            decimal oldAmountOfSender = userService.GetAccountAmount(userManager.GetUserId(User).ToString(), currency);
+            decimal newAmountOfSender = oldAmountOfSender - amount;
+
+            if (newAmountOfSender < 0)
+            {
+                return BadRequest("Not enought money");
+            }
+
+            userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency), newAmountOfSender);//sender
+
+            userService.UpdateAmount(userService.GetAccountByCurrency(receiverUserId, currency), newAmountOfReceiver);//receiver
+
+            userTransactionsService.AddTransaction(senderAccountId, receiverAccountId, amount, currencyRate, transactionDate);
+
+            ViewBag.message = "Transaction successful!";
+
+            return View(model);
+
+        }
+        
+          
+        public ActionResult AccountsList()
+        {
+
+
+            List<CurrencyRate> rates = exchangeService.GetConversionRate(Currency.EUR, new Currency[] { Currency.EUR, Currency.BTC, Currency.GBP, Currency.USD, Currency.RON });
+
+            List<CurrencyRateViewModel> viewModel = rates.Select(a => new CurrencyRateViewModel
+            {
+                Currency = a.Currency.ToString(),
+                Rate = a.Rate
+            }).ToList();
+
+            var userId = userManager.GetUserId(User).ToString();
+
+            List<UserBankAccounts> currentUserAccounts = userService.GetCurrentUserAccounts(userId);
+
+
+            List<BankAccountViewModel> accountsViewModels = new List<BankAccountViewModel>();
+
+            accountsViewModels = currentUserAccounts.Select(a => new BankAccountViewModel
+            {
+                AccountId = a.AccountId,
+                Amount = a.Amount,
+                Currency = a.Currency
+            }).ToList();
+            foreach (var item in accountsViewModels)
+            {
+                item.CurrencyRate = viewModel.FirstOrDefault(s => s.Currency == item.Currency).Rate;
+               
+
+            }
+
+            return View(accountsViewModels);
+
         }
     }
 }

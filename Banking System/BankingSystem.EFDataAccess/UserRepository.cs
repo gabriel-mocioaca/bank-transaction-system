@@ -6,19 +6,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using System.Threading.Tasks;
+
+
 namespace BankingSystem.EFDataAccess
 {
     public class UserRepository : BaseRepository<User>, IUserRepository
     {
         public UserRepository(BankingSystemDbContext dbContext) : base(dbContext)
         {
-            
+
+
         }
 
-        public UserBankAccounts GetAccount(string UserId , string currency)
+
+
+        public UserBankAccounts GetAccount(string UserId, string currency)
         {
             UserBankAccounts account = dbContext.UserBankAccounts.FirstOrDefault(a => a.UserId == UserId && a.Currency == currency);
-                return account;
+            return account;
         }
         public int GetAccountIdByCurrency(string userId, string currency)
         {
@@ -31,7 +37,8 @@ namespace BankingSystem.EFDataAccess
             }
             return 0;
         }
-        
+
+
         public UserBankAccounts GetAccountByCurrency(string userId, string currency)
         {
 
@@ -56,7 +63,6 @@ namespace BankingSystem.EFDataAccess
 
         public string GetUserId(User receiverUser)
         {
-
             return receiverUser.UserId;
         }
 
@@ -69,5 +75,33 @@ namespace BankingSystem.EFDataAccess
         {
             throw new NotImplementedException();
         }
+
+        public List<User> getAllUsers()
+        {
+            return dbContext.Users.ToList();
+        }
+
+        public bool FirstTimeUser(string v)
+        {
+            if (dbContext.Users.FirstOrDefault(user => user.UserId == v) != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public string GetAddress(string user)
+        {
+            var user1 = dbContext.Users.Where(x => x.UserId == user).SingleOrDefault();
+            return user1.Address;
+        }
+
+        public void SetAddress(string userId, string address)
+        {
+            var user = dbContext.Users.Where(x => x.UserId == userId).SingleOrDefault();
+            user.Address = address;
+            this.Update(user);
+        }
+
     }
 }

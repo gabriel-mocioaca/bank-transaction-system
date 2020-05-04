@@ -23,6 +23,9 @@
     <ProjectReference Include="..\BankingSystem.ApplicationLogic\BankingSystem.ApplicationLogic.csproj" />
     <ProjectReference Include="..\BankingSystem.EFDataAccess\BankingSystem.EFDataAccess.csproj" />
     <ProjectReference Include="..\BankingSystemExchange\BankingSystemExchange.csproj" />
+
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
+
   </ItemGroup>
 
   <ItemGroup>

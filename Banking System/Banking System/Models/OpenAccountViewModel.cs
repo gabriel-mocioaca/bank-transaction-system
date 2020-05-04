@@ -7,26 +7,9 @@ using System.Threading.Tasks;
 
 namespace BankingSystem.Models
 {
-    public class SendViewModel
+    public class OpenAccountViewModel
     {
-        [Range(1, 100000)]
-        [MaxLength(64)]
-        [Display(Name = "From Account:")]
-        public string SenderAccountId { get; set; }
-
-        [Required]
-        [MaxLength(64)]
-        [Display(Name = "To Account:")]
-        public string ReceiverName { get; set; }
-
-        [Range(1, 10000)]
-
-        [Display(Name = "The amount of money you wish to transfer:")]
-
-        public decimal Amount { get; set; }
-
-        public List<SelectListItem> SenderAccounts { get; set; } = new List<SelectListItem>();
-
+        [Display(Name = "What type of account do you wish to open?")]
         public string Currency { get; set; }
         public List<SelectListItem> Currencies { get; set; } = new List<SelectListItem>
         {
@@ -34,6 +17,5 @@ namespace BankingSystem.Models
             new SelectListItem { Value = "EUR", Text = "EUR" },
             new SelectListItem { Value = "RON", Text = "RON"  },
         };
-
     }
 }

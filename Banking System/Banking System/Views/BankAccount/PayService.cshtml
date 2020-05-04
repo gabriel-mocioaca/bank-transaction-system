@@ -1,0 +1,51 @@
+﻿@model BankingSystem.Models.PayForAServiceViewModel
+@{
+    ViewData["Title"] = "Pay for a service";
+}
+<h2>Pay for an utility</h2>
+<hr/>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="row">
+    <form class="col-md-9" asp-controller="BankAccount" asp-action="PayService" method="post">
+        <div class="form-group">
+            <label asp-for="SenderAccountId"></label>
+            <select asp-for="SenderAccountId" asp-items="Model.Currencies"></select>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ReceiverName"></label>
+            <select asp-for="ReceiverName" asp-items="Model.Services"></select>
+        </div>
+        <div class="form-group">
+            <label asp-for="ClientCode"></label>
+            <input asp-for="ClientCode" />
+            <span asp-validation-for="ClientCode" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="BillNr"></label>
+            <input asp-for="BillNr" />
+            <span asp-validation-for="BillNr" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Amount"></label>
+            <input asp-for="Amount" />
+            <span asp-validation-for="Amount" class="text-danger"></span>
+        </div>
+
+        <div class="col-2">
+            <button type="submit" class="btn btn-primary">Pay</button>
+        </div>
+
+        @if (!string.IsNullOrEmpty(ViewBag.message))
+        {
+            <span class="alert-success">@ViewBag.message</span>
+        }
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+

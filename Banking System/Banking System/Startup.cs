@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -46,7 +46,7 @@ namespace Banking_System
             services.AddDbContext<BankingSystemDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-
+           
 
             services.AddTransient<IPayRepository, PayRepository>();
             services.AddTransient<PayRepository>();
@@ -59,27 +59,48 @@ namespace Banking_System
 
             services.AddTransient<ITransactionsRepository, TransactionsRepository>();
             services.AddTransient<TransactionsRepository>();
+            services.AddScoped<IdentityRole>();
 
             services.AddScoped<UserTransactionsService>();
             services.AddScoped<UserService>();
-
             services.AddScoped<PayService>();
-
-
-
             services.AddScoped<ExchangeService>();
 
-            services.AddDefaultIdentity<IdentityUser>()
 
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultUI()
-                .AddDefaultTokenProviders();
-            
+
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.User.RequireUniqueEmail = true;
+            })
+                   .AddEntityFrameworkStores<ApplicationDbContext>()
+                   .AddDefaultUI()
+                   .AddDefaultTokenProviders();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
+        private async Task CreateUserRoles(IServiceProvider serviceProvider)
+        {
+            var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var UserManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
+
+            IdentityResult roleResult;
+            //Adding Admin Role
+            var roleCheck = await RoleManager.RoleExistsAsync("Admin");
+            if (!roleCheck)
+            {
+                //create the roles and seed them to the database
+                roleResult = await RoleManager.CreateAsync(new IdentityRole("Admin"));
+            }
+            //Assign Admin role to the main User here we have given our newly registered 
+            //login id for Admin management
+            IdentityUser user = await UserManager.FindByEmailAsync("test4@gmail.com");
+            var User = new IdentityUser();
+            await UserManager.AddToRoleAsync(user, "Admin");
+        }
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider services)
         {
             if (env.IsDevelopment())
             {
@@ -104,6 +125,8 @@ namespace Banking_System
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            CreateUserRoles(services).Wait();
         }
     }
 }
