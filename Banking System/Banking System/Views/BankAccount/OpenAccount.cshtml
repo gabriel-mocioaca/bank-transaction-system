@@ -1,0 +1,32 @@
+﻿@model BankingSystem.Models.OpenAccountViewModel
+@{
+    ViewData["Title"] = "Open Account";
+}
+
+<h2>Open a new account</h2>
+<hr />
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="row">
+    <form class="col-md-4" asp-controller="BankAccount" asp-action="OpenAccount" method="post">
+
+        <div class="form-group">
+
+            <label asp-for="Currency"></label>
+            <select asp-for="Currency" asp-items="Model.Currencies"></select>
+        </div>
+        <div class="col-2">
+
+            <button type="submit" class="btn btn-primary">Open Account</button>
+            @if (!string.IsNullOrEmpty(ViewBag.message))
+            {
+                <span class="alert-success">@ViewBag.message</span>
+            }
+        </div>
+        
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
