@@ -63,6 +63,10 @@ namespace Banking_System
             services.AddScoped<UserTransactionsService>();
             services.AddScoped<UserService>();
 
+            services.AddScoped<PayService>();
+
+
+
             services.AddScoped<ExchangeService>();
 
             services.AddDefaultIdentity<IdentityUser>()
