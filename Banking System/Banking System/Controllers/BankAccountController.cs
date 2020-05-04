@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,16 +20,19 @@ namespace Banking_System.Controllers
         private readonly UserManager<IdentityUser> userManager;
         private readonly UserTransactionsService userTransactionsService;
         private readonly UserService userService;
+        
         private readonly ExchangeService exchangeService = new ExchangeService();
 
         public BankAccountController(UserManager<IdentityUser> userManager,
             UserTransactionsService userTransactionsService,
             UserService userService,
+            
             ExchangeService exchangeService)
         {
             this.userManager = userManager;
             this.userTransactionsService = userTransactionsService;
             this.userService = userService;
+           
             this.exchangeService = exchangeService;
         }
 
@@ -84,6 +87,7 @@ namespace Banking_System.Controllers
             }
 
             userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency) , newAmount);
+            
             userTransactionsService.AddTransaction(FromAccountId, ToAccountId, newAmount, CurrencyRate, TransactionDate);
 
             return View(model);
@@ -95,7 +99,6 @@ namespace Banking_System.Controllers
 
             return View(model);
         }
-
         [HttpPost]
         public ActionResult Send([FromForm]SendViewModel model)
         {
@@ -118,7 +121,7 @@ namespace Banking_System.Controllers
 
 
             int receiverAccountId = userService.GetAccountIdByCurrency(receiverUserId, currency);
-      
+
             if (receiverAccountId == 0)
             {
                 return BadRequest("User does not have account");
@@ -135,7 +138,7 @@ namespace Banking_System.Controllers
             decimal oldAmountOfSender = userService.GetAccountAmount(userManager.GetUserId(User).ToString(), currency);
             decimal newAmountOfSender = oldAmountOfSender - amount;
 
-            if(newAmountOfSender < 0)
+            if (newAmountOfSender < 0)
             {
                 return BadRequest("Not enought money");
             }
@@ -149,6 +152,75 @@ namespace Banking_System.Controllers
             userService.UpdateAmount(userService.GetAccountByCurrency(receiverUserId, currency), newAmountOfReceiver);//receiver
 
             return Redirect(Url.Action("Send", "BankAccount"));
+        }
+
+        [HttpGet]
+        public ActionResult Exchange()
+        {
+            var model = new ExchangeViewModel();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Exchange([FromForm]ExchangeViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            var amount = model.Amount;
+            string fromCurrencyS = model.FromCurrency.ToString();
+            string toCurrencyS = model.ToCurrency.ToString();
+            var CurrentUserId = userManager.GetUserId(User).ToString();
+            var transactionDate = DateTime.Now;
+            var currencyRate = 2;
+
+
+            var senderAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), model.FromCurrency.ToString());
+            
+
+            int toAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), toCurrencyS);
+            if (toAccountId == 0)
+            {
+                
+                userService.AddAccount(userManager.GetUserId(User).ToString(), model.Amount, toCurrencyS);
+                toAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), toCurrencyS);
+            }
+
+
+            var fromAccount = userService.GetAccount(CurrentUserId , fromCurrencyS);
+            var toAccount = userService.GetAccount(CurrentUserId, toCurrencyS);
+            
+            
+            Currency fromCurrency = (Currency)Enum.Parse(typeof(Currency), model.FromCurrency.ToString(), true);
+            Currency toCurrency = (Currency)Enum.Parse(typeof(Currency), model.ToCurrency.ToString(), true);
+
+
+            var fromAmmount = fromAccount.Amount;
+            var toAmmount = toAccount.Amount;
+
+
+            var newExchangedAmount = exchangeService.Convert(fromCurrency, toCurrency , fromAmmount , toAmmount , fromAccount, toAccount , model.Amount , model.Rate);
+            decimal oldAmount = userService.GetAccountAmount(userManager.GetUserId(User).ToString(), toCurrencyS);
+            decimal newAmount = 0;
+            if (oldAmount == 0)
+            {
+                newAmount = newExchangedAmount;
+            }
+            else
+            {
+                newAmount = newExchangedAmount + oldAmount;
+            }
+            
+            if(newAmount < 0)
+            {
+                return BadRequest("Not enought money");
+            }
+            
+            userTransactionsService.AddTransaction(senderAccountId , toAccountId, newAmount, currencyRate, transactionDate);
+
+            return Redirect(Url.Action("Exchange", "BankAccount"));
         }
     }
 }

@@ -15,7 +15,7 @@ namespace BankingSystem.Models
         public decimal Amount { get; set; }
 
         public decimal Rate { get; set; }
-      
+
         public string Currency { get; set; }
         public List<SelectListItem> Currencies { get; set; } = new List<SelectListItem>
         {
