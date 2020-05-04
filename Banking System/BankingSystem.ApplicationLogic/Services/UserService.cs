@@ -64,10 +64,12 @@ namespace BankingSystem.ApplicationLogic.Services
             return user;
         }
 
+
         public string GetAddress(string user)
         {
             return userRepository.GetAddress(user);
         }
+
 
         public void AddUser(string userId , string userName )
         {
@@ -119,9 +121,11 @@ namespace BankingSystem.ApplicationLogic.Services
             throw new NotImplementedException();
         }
 
+
         public List<UserBankAccounts> GetCurrentUserAccounts(string userId)
         {
             return userBankAccountRepository.GetCurrentUserAccounts(userId);
         }
+
     }
 }

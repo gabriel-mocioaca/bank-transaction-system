@@ -1,3 +1,4 @@
+
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace BankingSystem.Models
         [Range(1, 10000)]
         [Display(Name = "Amount")]
         public decimal Amount { get; set; }
+
 
         [Display(Name = "Choose a currency: ")]
         public string Currency { get; set; }
