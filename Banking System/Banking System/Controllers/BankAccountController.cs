@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BankingSystem.ApplicationLogic.Data;
 using BankingSystem.ApplicationLogic.Services;
 using BankingSystem.EFDataAccess;
 using BankingSystem.Models;
@@ -9,6 +10,7 @@ using BankingSystemExchange;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Remotion.Linq.Clauses.ResultOperators;
 
 namespace Banking_System.Controllers
 {
@@ -82,10 +84,71 @@ namespace Banking_System.Controllers
             }
 
             userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency) , newAmount);
-            //userService.UpdateAccount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency));
             userTransactionsService.AddTransaction(FromAccountId, ToAccountId, newAmount, CurrencyRate, TransactionDate);
 
             return View(model);
-        }      
+        }
+        [HttpGet]
+        public ActionResult Send()
+        {
+            var model = new SendViewModel();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Send([FromForm]SendViewModel model)
+        {
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest();
+            //}
+
+            string currency = model.SenderAccountId;
+            var senderAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), currency);
+            var receiverName = model.ReceiverName;
+
+            var receiverUser = userService.GetUserByName(receiverName);
+            if (receiverUser == null)
+            {
+                return BadRequest("User not Found");
+            }
+
+            var receiverUserId = userService.GetUserId(receiverUser);//???
+
+
+            int receiverAccountId = userService.GetAccountIdByCurrency(receiverUserId, currency);
+      
+            if (receiverAccountId == 0)
+            {
+                return BadRequest("User does not have account");
+            }
+
+            var currencyRate = 1;
+            DateTime transactionDate = DateTime.Now;
+            var amount = model.Amount;
+
+
+            decimal oldAmountOfReceiver = userService.GetAccountAmount(receiverUserId, currency);
+            decimal newAmountOfReceiver = amount + oldAmountOfReceiver;
+
+            decimal oldAmountOfSender = userService.GetAccountAmount(userManager.GetUserId(User).ToString(), currency);
+            decimal newAmountOfSender = oldAmountOfSender - amount;
+
+            if(newAmountOfSender < 0)
+            {
+                return BadRequest("Not enought money");
+            }
+
+
+
+            userTransactionsService.AddTransaction(senderAccountId, receiverAccountId, amount, currencyRate, transactionDate);
+
+            userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency), newAmountOfSender);//sender
+
+            userService.UpdateAmount(userService.GetAccountByCurrency(receiverUserId, currency), newAmountOfReceiver);//receiver
+
+            return Redirect(Url.Action("Send", "BankAccount"));
+        }
     }
 }

@@ -12,5 +12,7 @@ namespace BankingSystem.ApplicationLogic.Abstractions
         User GetUserByName(string receiverName);
         IList<UserBankAccounts> GetAllAccounts(string userId);
         UserBankAccounts GetAccount(string UserId, string currency);
+        string GetUserId(User receiverUser);
+        object GetUserIdByName(string receiverName);
     }
 }

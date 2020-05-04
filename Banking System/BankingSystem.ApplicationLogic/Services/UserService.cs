@@ -76,5 +76,22 @@ namespace BankingSystem.ApplicationLogic.Services
             userAccount.Amount = amount;
             userBankAccountRepository.Update(userAccount);
         }
+
+        public string GetUserId(User receiverUser)
+        {
+            string userId = userRepository.GetUserId(receiverUser);
+            return userId;
+        }
+
+        public int GetAccountIdByUserIdAndCurrency(string receiverUserId, string currency)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object GetAllDeposits(IList<UserBankAccounts> allAccounts)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

@@ -1,0 +1,17 @@
+﻿@model BankingSystem.Models.SendViewModel
+@{
+    ViewData["Title"] = "Send";
+}
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<form class="col-md-4" asp-controller="BankAccount" asp-action="Send" method="post">
+
+    <select asp-for="SenderAccountId" asp-items="Model.Currencies"></select>
+    <input asp-for="ReceiverName"/>
+    <input asp-for="Amount" />
+    <div class="col-2">
+        <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+</form>
+
+

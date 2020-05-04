@@ -54,8 +54,20 @@ namespace BankingSystem.EFDataAccess
             return dbContext.Users.Where(user => user.UserName == userName).SingleOrDefault(); ;
         }
 
-        
+        public string GetUserId(User receiverUser)
+        {
+            //throw new NotImplementedException();
+            return receiverUser.UserId;
+        }
 
+        public string GetUserIdByName(string receiverName)
+        {
+            throw new NotImplementedException();
+        }
 
+        object IUserRepository.GetUserIdByName(string receiverName)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
