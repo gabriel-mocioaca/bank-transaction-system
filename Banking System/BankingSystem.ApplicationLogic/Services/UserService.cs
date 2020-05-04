@@ -93,6 +93,6 @@ namespace BankingSystem.ApplicationLogic.Services
             throw new NotImplementedException();
         }
 
-        
+
     }
 }

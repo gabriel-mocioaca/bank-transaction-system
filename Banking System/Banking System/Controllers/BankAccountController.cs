@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -157,14 +157,11 @@ namespace Banking_System.Controllers
        
         public ActionResult Transactions()
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest();
-            //}
+            
             var currentUSer = userManager.GetUserId(User).ToString();
             var allAccounts = userService.GetAllAccounts(userManager.GetUserId(User).ToString());
 
-            //List<UserTransaction> currentUserTransactions = ctx.UserTransactions.Where(t => currentUserAccountIds.Contains(t.ToAccountId) || currentUserAccountIds.Contains(t.FromAccountId)).ToList();
+           
             List<UserTransaction> userTransactions = new List<UserTransaction>();
 
             foreach (var item in allAccounts)
@@ -186,8 +183,7 @@ namespace Banking_System.Controllers
                
             }).ToList();
 
-            //var allExchanges = userService.GetAllExchanges();
-            //var allTransactionsSend = userService.GetAllTransactionsSend();
+            
             return View(viewModel);
         }
 
@@ -211,7 +207,7 @@ namespace Banking_System.Controllers
             string toCurrencyS = model.ToCurrency.ToString();
             var CurrentUserId = userManager.GetUserId(User).ToString();
             var transactionDate = DateTime.Now;
-            //var currencyRate = 2;
+            
 
 
             var senderAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), model.FromCurrency.ToString());

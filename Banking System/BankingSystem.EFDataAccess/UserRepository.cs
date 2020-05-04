@@ -22,6 +22,7 @@ namespace BankingSystem.EFDataAccess
         }
         public int GetAccountIdByCurrency(string userId, string currency)
         {
+
             List<UserBankAccounts> currentUserBankAccouts = dbContext.UserBankAccounts.Where(u => u.UserId == userId).ToList();
             foreach (var item in currentUserBankAccouts)
             {
@@ -33,6 +34,7 @@ namespace BankingSystem.EFDataAccess
         
         public UserBankAccounts GetAccountByCurrency(string userId, string currency)
         {
+
             List<UserBankAccounts> currentUserBankAccouts = dbContext.UserBankAccounts.Where(u => u.UserId == userId).ToList();
             foreach (var item in currentUserBankAccouts)
             {
@@ -54,6 +56,7 @@ namespace BankingSystem.EFDataAccess
 
         public string GetUserId(User receiverUser)
         {
+
             return receiverUser.UserId;
         }
 
