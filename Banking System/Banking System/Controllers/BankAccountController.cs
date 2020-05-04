@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -99,8 +99,61 @@ namespace Banking_System.Controllers
 
             return View(model);
         }
+        [HttpPost]
+        public ActionResult Send([FromForm]SendViewModel model)
+        {
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest();
+            //}
 
-     
+            string currency = model.SenderAccountId;
+            var senderAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), currency);
+            var receiverName = model.ReceiverName;
+
+            var receiverUser = userService.GetUserByName(receiverName);
+            if (receiverUser == null)
+            {
+                return BadRequest("User not Found");
+            }
+
+            var receiverUserId = userService.GetUserId(receiverUser);//???
+
+
+            int receiverAccountId = userService.GetAccountIdByCurrency(receiverUserId, currency);
+
+            if (receiverAccountId == 0)
+            {
+                return BadRequest("User does not have account");
+            }
+
+            var currencyRate = 1;
+            DateTime transactionDate = DateTime.Now;
+            var amount = model.Amount;
+
+
+            decimal oldAmountOfReceiver = userService.GetAccountAmount(receiverUserId, currency);
+            decimal newAmountOfReceiver = amount + oldAmountOfReceiver;
+
+            decimal oldAmountOfSender = userService.GetAccountAmount(userManager.GetUserId(User).ToString(), currency);
+            decimal newAmountOfSender = oldAmountOfSender - amount;
+
+            if (newAmountOfSender < 0)
+            {
+                return BadRequest("Not enought money");
+            }
+
+
+
+            userTransactionsService.AddTransaction(senderAccountId, receiverAccountId, amount, currencyRate, transactionDate);
+
+            userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency), newAmountOfSender);//sender
+
+            userService.UpdateAmount(userService.GetAccountByCurrency(receiverUserId, currency), newAmountOfReceiver);//receiver
+
+            return Redirect(Url.Action("Send", "BankAccount"));
+        }
+
         [HttpGet]
         public ActionResult Exchange()
         {

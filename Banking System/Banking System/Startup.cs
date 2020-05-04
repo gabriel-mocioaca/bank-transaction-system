@@ -46,7 +46,7 @@ namespace Banking_System
             services.AddDbContext<BankingSystemDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-           
+
 
             services.AddTransient<IPayRepository, PayRepository>();
             services.AddTransient<PayRepository>();
@@ -62,7 +62,7 @@ namespace Banking_System
 
             services.AddScoped<UserTransactionsService>();
             services.AddScoped<UserService>();
-            
+
             services.AddScoped<ExchangeService>();
 
             services.AddDefaultIdentity<IdentityUser>()
