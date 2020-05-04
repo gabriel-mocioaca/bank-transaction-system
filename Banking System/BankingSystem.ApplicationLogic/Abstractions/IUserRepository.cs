@@ -2,10 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-
 using System.Threading.Tasks;
-
-
 namespace BankingSystem.ApplicationLogic.Abstractions
 {
     public interface IUserRepository :IRepository<User>
@@ -21,6 +18,5 @@ namespace BankingSystem.ApplicationLogic.Abstractions
         bool FirstTimeUser(string v);
         string GetAddress(string user);
         void SetAddress(string userId, string address);
-
     }
 }

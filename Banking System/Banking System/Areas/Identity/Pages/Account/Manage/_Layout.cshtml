@@ -1,19 +1,17 @@
 ﻿@{
-
-
-    Layout = "/Areas/Identity/Pages/_Layout.cshtml";
-
+    Layout = "/Views/Shared/_Layout.cshtml";
 
 }
 
 <h2>Manage your account</h2>
 
 <div>
-
     <hr />
     <div class="row">
         <div class="col-md-3" style="display: flex; justify-content: flex-start">
-            
+            <div>
+                @Html.ActionLink("OpenAccount", "OpenAccount", "BankAccount", null, new { @class = "btn blue", style = "margin:5px" })
+            </div>
             <div>
                 @Html.ActionLink("Deposit", "Deposit", "BankAccount", null, new { @class = "btn blue", style = "margin:5px" })
             </div>

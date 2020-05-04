@@ -3,14 +3,37 @@
     ViewData["Title"] = "Exchange";
 }
 
-<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-<form class="col-md-4" asp-controller="BankAccount" asp-action="Exchange" method="post">
+<h2>Exchange Money</h2>
+<hr />
 
-    <select asp-for="FromCurrency" asp-items="Model.Currencies"></select>
-    <select asp-for="ToCurrency" asp-items="Model.Currencies"></select>
-    <input asp-for="Amount" />
-    <div class="col-2">
-        <button type="submit" class="btn btn-primary">Exchange</button>
-    </div>
-</form>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="row">
+    <form class="col-md-4" asp-controller="BankAccount" asp-action="Exchange" method="post">
+
+        <div class="form-group">
+            <label asp-for="FromCurrency"></label>
+            <select asp-for="FromCurrency" asp-items="Model.Currencies"></select>
+        </div>
+        <div class="form-group">
+            <label asp-for="ToCurrency"></label>
+            <select asp-for="ToCurrency" asp-items="Model.Currencies"></select>
+        </div>
+        <div>
+            <label asp-for="Amount"></label>
+            <input asp-for="Amount" />
+            <span asp-validation-for="Amount" class="text-danger"></span>
+        </div>
+        <div class="col-2">
+            <button type="submit" class="btn btn-primary">Exchange</button>
+            @if (!string.IsNullOrEmpty(ViewBag.message))
+            {
+                <span class="alert-success">@ViewBag.message</span>
+            }
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
 

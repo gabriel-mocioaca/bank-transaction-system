@@ -1,7 +1,6 @@
 
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
-
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -24,7 +23,6 @@ namespace BankingSystem.Models
             new SelectListItem { Value = "EUR", Text = "EUR" },
             new SelectListItem { Value = "RON", Text = "RON"  },
         };
-
     }
 
 }

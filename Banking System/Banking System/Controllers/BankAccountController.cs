@@ -43,6 +43,41 @@ namespace Banking_System.Controllers
             var allAccounts = userService.GetAllAccounts(userManager.GetUserId(User).ToString());
             return View();
         }
+
+        [HttpGet]
+        public ActionResult OpenAccount()
+        {
+            var model = new OpenAccountViewModel();
+            
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult OpenAccount(OpenAccountViewModel model)
+        {
+            string currency = model.Currency;
+            decimal Amount = 0;
+            int FromAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), currency);
+
+            if (FromAccountId != 0)
+            {
+                return BadRequest("This account already exists!");
+            }
+
+            if( !userService.FirstTimeUser(userManager.GetUserId(User).ToString()) )
+            {
+                userService.AddUser(userManager.GetUserId(User).ToString(), userManager.GetUserName(User));
+            }
+
+         
+            userService.AddAccount(userManager.GetUserId(User).ToString(), Amount, currency);
+
+            ViewBag.message = "Account opened successfully!";
+
+            return View(model);
+            
+        }
+
         
 
 
@@ -53,7 +88,6 @@ namespace Banking_System.Controllers
             return View(model);
         }
 
-        
         [HttpPost]
         public ActionResult Deposit(DepositViewModel model)
         {
@@ -62,14 +96,14 @@ namespace Banking_System.Controllers
                 return BadRequest();
             }
 
-            string currency = "EUR";
+
+            string currency = model.Currency;
 
             int FromAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), currency);
             if (FromAccountId == 0)
             {
-                userService.AddUser(userManager.GetUserId(User).ToString(), userManager.GetUserName(User));
-                userService.AddAccount(userManager.GetUserId(User).ToString(), model.Amount, currency);
-                FromAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), currency);
+
+                return BadRequest("The account does not exist!");
             }
 
             int ToAccountId = FromAccountId;
@@ -91,13 +125,15 @@ namespace Banking_System.Controllers
 
 
 
-            userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency), newAmount);
-
+            userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency) , newAmount);
+            
             userTransactionsService.AddTransaction(FromAccountId, ToAccountId, newAmount, CurrencyRate, TransactionDate);
+
+            ViewBag.message = "Transaction successful!";
 
             return View(model);
         }
-        
+
         [HttpGet]
         public ActionResult Send()
         {

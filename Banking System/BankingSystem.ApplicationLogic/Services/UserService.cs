@@ -1,15 +1,11 @@
 ﻿using BankingSystem.ApplicationLogic.Abstractions;
 using BankingSystem.ApplicationLogic.Data;
-
 using Microsoft.AspNet.Identity.EntityFramework;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using System.Threading.Tasks;
-
 
 namespace BankingSystem.ApplicationLogic.Services
 {
@@ -35,13 +31,11 @@ namespace BankingSystem.ApplicationLogic.Services
             return userBankAccount;
         }
 
-
         public List<User> getAllUsers()
         {
              List < User > userList = userRepository.getAllUsers();
             return userList;
         }
-
 
         public UserBankAccounts GetAccountByCurrency(string userId, string currency)
         {
@@ -82,19 +76,16 @@ namespace BankingSystem.ApplicationLogic.Services
             userRepository.Add(new User() {UserId = userId , UserName = userName});
         }
 
-
         public bool FirstTimeUser(string v)
         {
             //throw new NotImplementedException();
             return userRepository.FirstTimeUser(v);
         }
 
-
         public decimal GetAccountAmount(string userId , string currency)
         {
             return userBankAccountRepository.GetAccountAmount( userId,  currency);
         }
-
 
         public void SetAddress(string userId, string address)
         {
@@ -102,7 +93,6 @@ namespace BankingSystem.ApplicationLogic.Services
             userRepository.SetAddress(userId, address);
 
         }
-
 
         public void UpdateAccount(UserBankAccounts userAccount)
         {
