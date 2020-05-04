@@ -47,9 +47,6 @@ namespace Banking_System
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
            
-
-          
-
             services.AddTransient<IUsersBankAccountRepository, UserBankAccountRepository>();
             services.AddTransient<UserBankAccountRepository>();
 
@@ -61,7 +58,7 @@ namespace Banking_System
 
             services.AddScoped<UserTransactionsService>();
             services.AddScoped<UserService>();
-           
+
             services.AddScoped<ExchangeService>();
 
             services.AddDefaultIdentity<IdentityUser>()

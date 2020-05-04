@@ -32,5 +32,6 @@ namespace BankingSystem.Models
             new SelectListItem { Value = "EUR", Text = "EUR" },
             new SelectListItem { Value = "RON", Text = "RON"  },
         };
+
     }
 }

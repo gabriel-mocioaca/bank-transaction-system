@@ -1,0 +1,365 @@
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.deps.json
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.json
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.dev.json
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.dll
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csprojAssemblyReference.cache
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cache
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfoInputs.cache
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfo.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.input.cache
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.output.cache
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorCoreGenerate.cache
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cache
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CopyComplete
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.dll
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.dll
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.pdb
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.pdb
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Cora\Source\Repos\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.deps.json
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.json
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.dev.json
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.dll
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.dll
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.pdb
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cache
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.input.cache
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.output.cache
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorCoreGenerate.cache
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cache
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CopyComplete
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.genruntimeconfig.cache
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\libman.json
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\appsettings.json
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\libman.json
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.deps.json
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.json
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.dev.json
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.dll
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.pdb
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.dll
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.dll
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.dll
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.pdb
+D:\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.pdb
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csprojAssemblyReference.cache
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cache
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfoInputs.cache
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfo.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.input.cache
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.output.cache
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorCoreGenerate.cache
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cache
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cs
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CopyComplete
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.dll
+D:\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\libman.json
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.deps.json
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.json
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.dev.json
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.dll
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.dll
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.pdb
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.input.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.output.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorCoreGenerate.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cs
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CopyComplete
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.genruntimeconfig.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Documents\GitHub\bank-transaction-system\Banking System\Banking System\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\libman.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.deps.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.dev.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.input.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.output.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorCoreGenerate.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CopyComplete
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.genruntimeconfig.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystemExchange.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\bin\Debug\netcoreapp2.1\BankingSystemExchange.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Transactions.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Deposit.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Exchange.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Index.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Send.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\libman.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.deps.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.dev.json
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystemExchange.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\bin\Debug\netcoreapp2.1\BankingSystemExchange.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csprojAssemblyReference.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CoreCompileInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfoInputs.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.input.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.output.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorCoreGenerate.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Deposit.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Exchange.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Index.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Send.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Transactions.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cache
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cs
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CopyComplete
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\catal\OneDrive\Desktop\New folder (2)\W2\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.genruntimeconfig.cache
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\libman.json
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.deps.json
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.json
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.runtimeconfig.dev.json
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.pdb
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.dll
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.dll
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.dll
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystemExchange.dll
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.ApplicationLogic.pdb
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystem.EFDataAccess.pdb
+C:\Users\Cora\source\repos\BankingSystem\Banking System\bin\Debug\netcoreapp2.1\BankingSystemExchange.pdb
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csprojAssemblyReference.cache
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cache
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorAssemblyInfo.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfoInputs.cache
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.AssemblyInfo.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.input.cache
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.TagHelpers.output.cache
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorCoreGenerate.cache
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\BankAccount\Deposit.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cache
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.RazorTargetAssemblyInfo.cs
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.Views.pdb
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.csproj.CopyComplete
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.dll
+C:\Users\Cora\source\repos\BankingSystem\Banking System\obj\Debug\netcoreapp2.1\BankingSystem.pdb

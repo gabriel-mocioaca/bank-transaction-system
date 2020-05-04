@@ -20,19 +20,16 @@ namespace Banking_System.Controllers
         private readonly UserManager<IdentityUser> userManager;
         private readonly UserTransactionsService userTransactionsService;
         private readonly UserService userService;
-       
         private readonly ExchangeService exchangeService = new ExchangeService();
 
         public BankAccountController(UserManager<IdentityUser> userManager,
             UserTransactionsService userTransactionsService,
             UserService userService,
-            
             ExchangeService exchangeService)
         {
             this.userManager = userManager;
             this.userTransactionsService = userTransactionsService;
             this.userService = userService;
-            
             this.exchangeService = exchangeService;
         }
 
@@ -85,8 +82,6 @@ namespace Banking_System.Controllers
             {
                 newAmount = Amount + oldAmount;
             }
-
-
 
             userService.UpdateAmount(userService.GetAccountByCurrency(userManager.GetUserId(User).ToString(), currency) , newAmount);
             userTransactionsService.AddTransaction(FromAccountId, ToAccountId, newAmount, CurrencyRate, TransactionDate);
@@ -155,6 +150,5 @@ namespace Banking_System.Controllers
 
             return Redirect(Url.Action("Send", "BankAccount"));
         }
-
     }
 }
