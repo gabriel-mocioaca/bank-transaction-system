@@ -1,0 +1,25 @@
+﻿@model List<BankingSystem.ApplicationLogic.Data.User>
+
+@{
+    ViewBag.Title = "All Users";
+}
+
+<h1>All Users</h1>
+
+@if (Model.Any())
+{
+    foreach (var user in Model)
+    {
+        <div class="card mb-3">
+            <div class="card-header">
+                User Id : @user.UserId
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@user.UserName</h5>
+            </div>
+            <div class="card-footer">
+                <a asp-action="AccountsList" asp-controller="Administrator" asp-route-id="@user.UserName" class="btn btn-primary">AccountsList</a>
+            </div>
+        </div>
+    }
+}

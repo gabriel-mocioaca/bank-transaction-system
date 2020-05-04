@@ -1,0 +1,38 @@
+﻿@model BankingSystem.Models.SendViewModel
+@{
+    ViewData["Title"] = "Send";
+}
+<h2>Send money to another person</h2>
+<hr />
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="row">
+    <form class="col-md-9" asp-controller="BankAccount" asp-action="Send" method="post">
+
+        <div class="form-group">
+            <label asp-for="SenderAccountId"></label>
+            <select asp-for="SenderAccountId" asp-items="Model.Currencies"></select>
+        </div>
+        <div class="form-group">
+            <label asp-for="ReceiverName"></label>
+            <input asp-for="ReceiverName" />
+            <span asp-validation-for="ReceiverName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Amount"></label>
+            <input asp-for="Amount" />
+            <span asp-validation-for="Amount" class="text-danger"></span>
+        </div>
+        <div class="col-2">
+            <button type="submit" class="btn btn-primary">Send</button>
+            @if (!string.IsNullOrEmpty(ViewBag.message))
+            {
+                <span class="alert-success">@ViewBag.message</span>
+            }
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
