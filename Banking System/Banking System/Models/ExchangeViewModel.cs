@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
+
 using System.ComponentModel.DataAnnotations;
+
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,6 +11,7 @@ namespace BankingSystem.Models
 {
     public class ExchangeViewModel
     {
+
         [Display(Name ="From Currency")]
         public string FromCurrency { get; set; }
 
@@ -17,6 +20,7 @@ namespace BankingSystem.Models
         public string ToCurrency { get; set; }
 
         [Display(Name = "Amount")]
+
         public decimal Amount { get; set; }
 
         public decimal Rate { get; set; }

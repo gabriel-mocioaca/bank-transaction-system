@@ -1,10 +1,15 @@
 ﻿@{
-    Layout = "/Views/Shared/_Layout.cshtml";
+
+
+    Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+
+
 }
 
 <h2>Manage your account</h2>
 
 <div>
+
     <hr />
     <div class="row">
         <div class="col-md-3" style="display: flex; justify-content: flex-start">
@@ -25,6 +30,7 @@
     </div>
     <hr />
     <h4>Change your account settings:</h4>
+
     <hr />
     <div class="row">
         <div class="col-md-3">
@@ -34,6 +40,7 @@
         <div class="col-md-9">
             @RenderBody()
         </div>
+
     </div>
 </div>
 

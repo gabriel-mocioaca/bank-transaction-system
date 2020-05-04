@@ -20,7 +20,9 @@ namespace BankingSystem.Models
         public string ReceiverName { get; set; }
 
         [Range(1, 10000)]
+
         [Display(Name = "The amount of money you wish to transfer:")]
+
         public decimal Amount { get; set; }
 
         public List<SelectListItem> SenderAccounts { get; set; } = new List<SelectListItem>();
@@ -32,5 +34,6 @@ namespace BankingSystem.Models
             new SelectListItem { Value = "EUR", Text = "EUR" },
             new SelectListItem { Value = "RON", Text = "RON"  },
         };
+
     }
 }

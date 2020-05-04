@@ -5,7 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
 using System.Threading.Tasks;
+
 
 namespace BankingSystem.EFDataAccess
 {
@@ -13,6 +15,7 @@ namespace BankingSystem.EFDataAccess
     {
         public UserRepository(BankingSystemDbContext dbContext) : base(dbContext)
         {
+
 
         }
 
@@ -25,6 +28,7 @@ namespace BankingSystem.EFDataAccess
         }
         public int GetAccountIdByCurrency(string userId, string currency)
         {
+
             List<UserBankAccounts> currentUserBankAccouts = dbContext.UserBankAccounts.Where(u => u.UserId == userId).ToList();
             foreach (var item in currentUserBankAccouts)
             {
@@ -34,8 +38,10 @@ namespace BankingSystem.EFDataAccess
             return 0;
         }
 
+
         public UserBankAccounts GetAccountByCurrency(string userId, string currency)
         {
+
             List<UserBankAccounts> currentUserBankAccouts = dbContext.UserBankAccounts.Where(u => u.UserId == userId).ToList();
             foreach (var item in currentUserBankAccouts)
             {
@@ -96,5 +102,6 @@ namespace BankingSystem.EFDataAccess
             user.Address = address;
             this.Update(user);
         }
+
     }
 }
