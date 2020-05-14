@@ -182,7 +182,157 @@ namespace BankingSystem.ApplicationLogic.Tests.Services
             });
         }
 
-       
+        [TestMethod]
+        public void AddAccount_ThrowsException_WhenUserIdIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            string nullUserId = null;
+            string existingUserId = "userId";
+            decimal amount = 1;
+            string currency = "EUR";
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.AddAccount(nullUserId, amount, currency);
+            });
+        }
+
+        [TestMethod]
+        public void AddAccount_ThrowsException_WhenCurrencyIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            string userId = "dfasdasdsa";
+            decimal amount = 1;
+            string nullCurrency = null;
+            string existingCurrency = "EUR";
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.AddAccount(userId, amount, nullCurrency);
+            });
+        }
+
+
+        [TestMethod]
+        public void AddUser_ThrowsException_WhenUserIdIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            string userName = "userName";
+            string nullUserId = null;
+            string existingUserId = "userId";
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.AddUser(nullUserId, userName);
+            });
+        }
+
+        [TestMethod]
+        public void AddUser_ThrowsException_WhenUserNameIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            string nullUserName = null;
+            string existingUserName = "userName";
+            string userId = "userId";
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.AddUser(userId, nullUserName);
+            });
+        }
+
+        [TestMethod]
+        public void UpdateAccount_ThrowsException_WhenUserAccountNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            var existingUserId = "2cb5f5c9-30d9-1986-a84e-df7aa66b37bf";
+
+            var existingCurrency = "EUR";
+
+            UserBankAccounts nonExistingUserBankAccount = null;
+            var existingUserBankAccount = new UserBankAccounts
+            {
+                AccountId = 1,
+                UserId = existingUserId,
+                Amount = 1,
+                Currency = existingCurrency
+            };
+
+            Assert.ThrowsException<EntityNotFoundException>(() => {
+                userService.UpdateAccount(nonExistingUserBankAccount);
+            });
+        }
+
+
+        [TestMethod]
+        public void UpdateAmount_ThrowsException_WhenUserAccountNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+            var existingUserId = "2cb5f5c9-30d9-1986-a84e-df7aa66b37bf";
+
+            var existingCurrency = "EUR";
+            UserBankAccounts nonExistingUserBankAccount = null;
+            var existingUserBankAccount = new UserBankAccounts
+            {
+                AccountId = 1,
+                UserId = existingUserId,
+                Amount = 1,
+                Currency = existingCurrency
+            };
+
+            decimal amount = 1;
+
+            Assert.ThrowsException<EntityNotFoundException>(() => {
+                userService.UpdateAmount(nonExistingUserBankAccount, amount);
+            });
+        }
+
+        [TestMethod]
+        public void GetUserId_ThrowsException_WhenUserDoesNotExist()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            User nonExistingReceiverUser = null;
+            User existingReceiverUser = new User
+            {
+                UserId = "useruseruseruser",
+                UserName = "useruser",
+                PhoneNo = "64738",
+                Address = "user"
+            };
+
+            string existingUserId = "das";
+            string nonExistingUserId = null;
+
+            userRepoMock.Setup(userRepo => userRepo.GetUserId(nonExistingReceiverUser)).Returns(nonExistingUserId);
+            userRepoMock.Setup(userRepo => userRepo.GetUserId(existingReceiverUser)).Returns(existingUserId);
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.GetUserId(nonExistingReceiverUser);
+            });
+        }
 
     }
 }
