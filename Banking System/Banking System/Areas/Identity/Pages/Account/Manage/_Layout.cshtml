@@ -1,6 +1,5 @@
 ﻿@{
     Layout = "/Views/Shared/_Layout.cshtml";
-
 }
 
 <h2>Manage your account</h2>
@@ -9,6 +8,9 @@
     <hr />
     <div class="row">
         <div class="col-md-3" style="display: flex; justify-content: flex-start">
+            <div>
+                @Html.ActionLink("AccountsList", "AccountsList", "BankAccount", null, new { @class = "btn blue", style = "margin:5px" })
+            </div>
             <div>
                 @Html.ActionLink("OpenAccount", "OpenAccount", "BankAccount", null, new { @class = "btn blue", style = "margin:5px" })
             </div>
@@ -28,7 +30,6 @@
     </div>
     <hr />
     <h4>Change your account settings:</h4>
-
     <hr />
     <div class="row">
         <div class="col-md-3">
@@ -38,8 +39,8 @@
         <div class="col-md-9">
             @RenderBody()
         </div>
-
     </div>
+    <img src="~/images/buline2.png" />
 </div>
 
 @section Scripts {

@@ -9,6 +9,5 @@ namespace BankingSystem.ApplicationLogic.Abstractions
     {
         //UserTransaction SetAmount(UserTransaction userTransaction);
         List<UserTransaction> getTransactionsByAccountId(int accountId);
-
     }
 }

@@ -1,12 +1,11 @@
-
-using System;
-
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using BankingSystem.ApplicationLogic.Services;
+using BankingSystem.EFDataAccess;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -16,19 +15,22 @@ namespace BankingSystem.Areas.Identity.Pages.Account.Manage
 {
     public partial class IndexModel : PageModel
     {
-        private readonly UserService userService;
+        private readonly UserRepository _userRepository;
+        private readonly UserService _userService;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly IEmailSender _emailSender;
 
         public IndexModel(
+            UserRepository userRepository,
             UserService userService,
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
             IEmailSender emailSender)
 
         {
-            this.userService = userService;
+            _userRepository = userRepository;
+            _userService = userService;
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
@@ -66,10 +68,13 @@ namespace BankingSystem.Areas.Identity.Pages.Account.Manage
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
 
+
             var userName = await _userManager.GetUserNameAsync(user);
             var email = await _userManager.GetEmailAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-            var address = userService.GetAddress(_userManager.GetUserId(User).ToString());
+            if (!_userService.FirstTimeUser(_userManager.GetUserId(User).ToString()))
+                _userService.AddUser(_userManager.GetUserId(User).ToString(), _userManager.GetUserName(User));
+            var address = _userRepository.GetAsynsAdress(_userManager.GetUserId(User).ToString()).Result;
 
             Username = userName;
 
@@ -92,7 +97,7 @@ namespace BankingSystem.Areas.Identity.Pages.Account.Manage
                 return Page();
             }
 
-            userService.SetAddress(_userManager.GetUserId(User).ToString() , Input.Address);
+            _userService.SetAddress(_userManager.GetUserId(User).ToString() , Input.Address);
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)

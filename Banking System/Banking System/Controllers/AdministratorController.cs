@@ -27,25 +27,25 @@ namespace BankingSystem.Controllers
             return View(userList);
 
         }
+
         [HttpGet]
-        public ActionResult AccountsList()
+        public IActionResult AccountsList(string id)
         {
             var model = new AccountsListViewModel();
+            model.UserName = id;
 
-            return View(model);
-        }
-        [HttpPost]
-        public IActionResult AccountsList(AccountsListViewModel model)
-        {
-            string userName = model.UserName;
-
-            var user = userService.GetUserByName(userName);
+            var user = userService.GetUserByName(id);
 
             string userId = userService.GetUserId(user);
 
             IList<UserBankAccounts> AccountsList = userService.GetAllAccounts(userId);
 
+            //model.accountsList = AccountsList;
+
             return View(AccountsList);
+
+
+
         }
 
     }

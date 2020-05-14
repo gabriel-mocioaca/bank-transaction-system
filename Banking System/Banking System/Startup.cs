@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -94,7 +94,7 @@ namespace Banking_System
             }
             //Assign Admin role to the main User here we have given our newly registered 
             //login id for Admin management
-            IdentityUser user = await UserManager.FindByEmailAsync("test4@gmail.com");
+            IdentityUser user = await UserManager.FindByEmailAsync("andrew@admin.com");
             var User = new IdentityUser();
             await UserManager.AddToRoleAsync(user, "Admin");
         }

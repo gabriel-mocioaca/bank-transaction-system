@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -43,7 +43,6 @@ namespace Banking_System.Controllers
             var allAccounts = userService.GetAllAccounts(userManager.GetUserId(User).ToString());
             return View();
         }
-
         [HttpGet]
         public ActionResult OpenAccount()
         {
@@ -78,8 +77,6 @@ namespace Banking_System.Controllers
             
         }
 
-        
-
 
         [HttpGet]
         public ActionResult Deposit()
@@ -96,13 +93,11 @@ namespace Banking_System.Controllers
                 return BadRequest();
             }
 
-
             string currency = model.Currency;
 
             int FromAccountId = userService.GetAccountIdByCurrency(userManager.GetUserId(User).ToString(), currency);
             if (FromAccountId == 0)
             {
-
                 return BadRequest("The account does not exist!");
             }
 
@@ -133,7 +128,6 @@ namespace Banking_System.Controllers
 
             return View(model);
         }
-
         [HttpGet]
         public ActionResult Send()
         {
@@ -296,7 +290,7 @@ namespace Banking_System.Controllers
             
             userTransactionsService.AddTransaction(senderAccountId , toAccountId, newAmount, model.Rate, transactionDate);
 
-            ViewBag.message = "Transaction successful!";
+            ViewBag.message = "Exchange successful!";
 
             return Redirect(Url.Action("Exchange", "BankAccount"));
         }

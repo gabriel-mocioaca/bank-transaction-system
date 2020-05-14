@@ -33,7 +33,7 @@ namespace Banking_System.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "We’re happy to answer any questions you may have, just send us a message via our email";
 
             return View();
         }

@@ -3,32 +3,135 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>Exchange rates</h1>
-    <p class="lead">@DateTime.Now</p>
-
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/2.png" alt="PayBills" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Pay your bills from the comfort of your home!
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                    <a class="btn btn-info" asp-area="" asp-controller="BankAccount" asp-action="PayService">
+                        Learn more
+                    </a>
+                    }
+                    else {
+                        <a class="btn btn-info" asp-area="Identity" asp-page="/Account/Login">
+                         Learn more
+                        </a> 
+                    }
+                    
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/1.png" alt="SendMoney" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Sending money to your friends has never been easier!
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn btn-info" asp-area="" asp-controller="BankAccount" asp-action="Send">
+                            Learn more
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-info" asp-area="Identity" asp-page="/Account/Login">
+                            Learn more
+                        </a>
+                    }
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/3.png" alt="Exchange" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Exchange your money in different currencies!
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn btn-info" asp-area="" asp-controller="BankAccount" asp-action="Exchange">
+                            Learn more
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-info" asp-area="Identity" asp-page="/Account/Login">
+                            Learn more
+                        </a>
+                    }
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
 
-<div class="row">
-    <table class="table table-striped">
-        <thead>
-            <tr>
+<hr>
+<!-- Main navigation -->
+<header>
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container ">
 
-                <th scope="col">From</th>
-                <th scope="col">To</th>
-                <th scope="col">Rate</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (BankingSystem.Models.CurrencyRateViewModel rate in Model)
-            {
-                <tr>
-                    <td>EUR</td>
-                    <td>@rate.Currency</td>
-                    <td>@rate.Rate</td>
-                </tr>
-            }
+            <div class="row wow fadeIn">
+                <!--Grid column-->
+                <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                    <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Exchange rates</h3>
+                    @*<hr class="hr-light my-4 w-75">*@
+                    <p class="lead">@DateTime.Now</p>
+                </div>
 
-        </tbody>
-    </table>
-</div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="container px-md-3 px-sm-0">
+            <div class="row py-5">
+                <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                    <table class="table table-striped ">
+                        <thead>
+                            <tr id="center">
+
+                                <th scope="col">From</th>
+                                <th scope="col">To</th>
+                                <th scope="col">Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (BankingSystem.Models.CurrencyRateViewModel rate in Model)
+                            {
+                                <tr>
+                                    <td>EUR</td>
+                                    <td>@rate.Currency</td>
+                                    <td>@rate.Rate</td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="~/images/buline2.png" />
+</main>

@@ -1,7 +1,7 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 20px;
 }
 
@@ -43,7 +43,8 @@ body {
 }
 
 .navbar-nav li a {
-    color: #FFFFFF
+    color: #000000;
+    line-height: 40px;
 }
 
 /* start da css for da buttons */
@@ -70,3 +71,161 @@ body {
         background-color: #6FC6FF;
     }
 
+.custom-navbar {
+    background: #ffffff;
+    border-top: 5px solid #68217a;
+    border-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 20px;
+    border-radius: 40px;
+    min-height: 80px;
+}
+
+    .custom-navbar .nav a.active:hover {
+        background-color: #68217a;
+        color: #ffffff;
+    }
+
+
+#TableAccounts {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    #TableAccounts td, #TableAccounts th {
+        border-radius: 13px;
+        padding: 8px;
+    }
+
+    #TableAccounts tr {
+        background-color: #b4cedd;
+    }
+
+        #TableAccounts tr:hover {
+            background-color: #f1f1f1;
+        }
+
+    #TableAccounts th {
+        padding: 12px;
+        text-align: left;
+        background-color: #555;
+        color: white;
+    }
+
+
+.collapsible {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-radius: 13px;
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    background-color: #55acee;
+    color: white;
+}
+
+    .active2, .collapsible:hover {
+        background-color: #555;
+    }
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.view {
+    height: 100%;
+}
+
+@media (max-width: 740px) {
+    .view {
+        height: 100vh;
+    }
+}
+
+.rgba-gradient {
+    background: -moz-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background: linear-gradient(to 45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+}
+
+footer {
+    background-image: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer .social {
+    overflow: hidden;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.welcome-area {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.header-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+    text-align: center;
+    width: 100%;
+}
+
+#live-view {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul#horizontal li{
+    display: inline;
+}
+
+tr#center th{
+    text-align:center;
+}
+
+.btn2 {
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

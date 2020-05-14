@@ -25,11 +25,9 @@ namespace BankingSystem.EFDataAccess
             return 0;
         }
 
-
         public List<UserBankAccounts> GetCurrentUserAccounts(string userId)
         {
             return dbContext.UserBankAccounts.Where(b => b.UserId == userId).ToList();
         }
-
     }
 }
