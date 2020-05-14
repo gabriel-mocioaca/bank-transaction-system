@@ -1,5 +1,6 @@
 ﻿using BankingSystem.ApplicationLogic.Abstractions;
 using BankingSystem.ApplicationLogic.Data;
+using BankingSystem.ApplicationLogic.Exceptions;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -20,13 +21,30 @@ namespace BankingSystem.ApplicationLogic.Services
         }
         public UserBankAccounts GetAccount(string UserId, string currency)
         {
+            
+            if (UserId == null)
+                throw new Exception("Empty UserID");
+
+            if (currency == null)
+                throw new Exception("Empty Currency");
+            
             var account = userRepository.GetAccount(UserId, currency);
+            if (account == null)
+                throw new EntityNotFoundException(UserId);
+
             return account;
-        }
+        }//
 
         public int GetAccountIdByCurrency(string userId, string currency)
         {
+            if (userId == null)
+                throw new Exception("Empty UserID");
+
+            if (currency == null)
+                throw new Exception("Empty Currency");
+
             var userBankAccount = userRepository.GetAccountIdByCurrency(userId, currency);
+            
 
             return userBankAccount;
         }
@@ -34,93 +52,145 @@ namespace BankingSystem.ApplicationLogic.Services
         public List<User> getAllUsers()
         {
              List < User > userList = userRepository.getAllUsers();
+             if (userList == null)
+                throw new Exception("Users list empty");
             return userList;
         }
-
+        //
         public UserBankAccounts GetAccountByCurrency(string userId, string currency)
         {
+            if (userId == null)
+                throw new Exception("Empty UserID");
+
+            if (currency == null)
+                throw new Exception("Empty Currency");
+
             var userBankAccount = userRepository.GetAccountByCurrency(userId, currency);
+            if (userBankAccount == null)
+                throw new EntityNotFoundException(userId);
 
             return userBankAccount;
         }
-
+        //
         public IList<UserBankAccounts> GetAllAccounts(string userId)
         {
+            if (userId == null)
+                throw new Exception("Empty UserID");
+
+
             //return userRepository.GetAll().Where(x => x.UserBankAccounts.UserId == userId);
             var userBankAccounts = userRepository.GetAllAccounts(userId);
+            if (userBankAccounts == null)
+                throw new EntityNotFoundException(userId);
             return userBankAccounts;
         }
 
-
+        //
         public void AddAccount(string userId, decimal amount , string currency  )
         {
-            userBankAccountRepository.Add(new UserBankAccounts() { UserId = userId , Amount = amount, Currency = currency }) ;
-        }
+            if (userId == null)
+                throw new Exception("Empty UserID");
 
+            if (currency == null)
+                throw new Exception("Empty Currency");
+
+           
+            userBankAccountRepository.Add(new UserBankAccounts() { UserId = userId , Amount = amount, Currency = currency }) ;
+
+        }
+        //
         public User GetUserByName(string receiverName)
         {
-            var user = userRepository.GetUserByName(receiverName);
+            if (receiverName == null)
+                throw new Exception("Empty Name");
 
+            var user = userRepository.GetUserByName(receiverName);
+            if (user == null)
+                throw new EntityNotFoundException(receiverName);
             return user;
         }
-
-        /*public string GetAddress(string user)
-        {
-            return userRepository.GetAddress(user);
-        }*/
+        //
+        
 
         public void AddUser(string userId , string userName )
         {
+            if (userId == null)
+                throw new Exception("Empty UserID");
+
+            if (userName == null)
+                throw new Exception("Empty Name");
+
             userRepository.Add(new User() {UserId = userId , UserName = userName});
         }
-
-        public bool FirstTimeUser(string v)
+        //
+        public bool FirstTimeUser(string userId)
         {
-            //throw new NotImplementedException();
-            return userRepository.FirstTimeUser(v);
-        }
 
+            if (userId == null)
+                throw new Exception("Empty UserID");
+
+
+            return userRepository.FirstTimeUser(userId);
+        }
+        //
         public decimal GetAccountAmount(string userId , string currency)
         {
+            if (userId == null)
+                throw new Exception("Empty UserID");
+
+            if (currency == null)
+                throw new Exception("Empty currency");
+
             return userBankAccountRepository.GetAccountAmount( userId,  currency);
         }
-
+        //
         public void SetAddress(string userId, string address)
         {
+
+            if (userId == null)
+                throw new Exception("Empty UserID");
+
+            if (address == null)
+                throw new Exception("Empty address");
 
             userRepository.SetAddress(userId, address);
 
         }
-
+        //
         public void UpdateAccount(UserBankAccounts userAccount)
         {
+            if (userAccount == null)
+                throw new EntityNotFoundException("userAccount null");
+
             userBankAccountRepository.Update(userAccount);
         }
-       
+        
         public void UpdateAmount( UserBankAccounts userAccount , decimal amount )
         {
+            if (userAccount == null)
+                throw new EntityNotFoundException("userAccount null");
+
             userAccount.Amount = amount;
             userBankAccountRepository.Update(userAccount);
         }
 
         public string GetUserId(User receiverUser)
         {
+               
+
             string userId = userRepository.GetUserId(receiverUser);
+            if (userId == null)
+                throw new Exception("UserId not found");
+
             return userId;
         }
 
-        public int GetAccountIdByUserIdAndCurrency(string receiverUserId, string currency)
-        {
-            throw new NotImplementedException();
-        }
-
-        public object GetAllDeposits(IList<UserBankAccounts> allAccounts)
-        {
-            throw new NotImplementedException();
-        }
 
         public List<UserBankAccounts> GetCurrentUserAccounts(string userId)
         {
+            if (userId == null)
+                throw new Exception("UserId not found");
+
             return userBankAccountRepository.GetCurrentUserAccounts(userId);
         }
     }

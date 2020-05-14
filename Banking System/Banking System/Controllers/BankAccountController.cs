@@ -290,7 +290,7 @@ namespace Banking_System.Controllers
             
             userTransactionsService.AddTransaction(senderAccountId , toAccountId, newAmount, model.Rate, transactionDate);
 
-            ViewBag.message = "Exchange successful!";
+            ViewBag.message = "Transaction successful!";
 
             return Redirect(Url.Action("Exchange", "BankAccount"));
         }

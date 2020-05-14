@@ -50,7 +50,7 @@ namespace BankingSystemExchange
             }
         }
 
-        public decimal Convert(Currency fromCurrency, Currency toCurrency, decimal fromAmount , decimal toAmount ,
+        public decimal Convert(Currency fromCurrency, Currency toCurrency, decimal fromAmmount , decimal toAmmount ,
             UserBankAccounts fromAccount ,UserBankAccounts toAccount, decimal viewModelAmmount ,decimal viewModelRate)
         {
             
