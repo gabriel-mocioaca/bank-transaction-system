@@ -333,6 +333,88 @@ namespace BankingSystem.ApplicationLogic.Tests.Services
                 userService.GetUserId(nonExistingReceiverUser);
             });
         }
+        [TestMethod]
+        public void FirstTimeUser_ThrowsException_WhenUserIdIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+
+            string userId = null;
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.FirstTimeUser(userId);
+            });
+        }
+
+        [TestMethod]
+        public void GetAccountAmount_ThrowsException_WhenUserIdIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+
+            string userId = null;
+            string currency = "asdsa";
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.GetAccountAmount(userId, currency);
+            });
+        }
+
+        [TestMethod]
+        public void GetAccountAmount_ThrowsException_WhenCurrencyIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+
+            string userId = "ASdasd";
+            string currency = null;
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.GetAccountAmount(userId, currency);
+            });
+        }
+
+        [TestMethod]
+        public void SetAddress_ThrowsException_WhenUserIdNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+
+            string userId = null;
+            string address = "sadas";
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.SetAddress(userId, address);
+            });
+        }
+        [TestMethod]
+        public void SetAddress_ThrowsException_WhenAdressNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+
+            string userId = "sadas";
+            string address = null;
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.SetAddress(userId, address);
+            });
+        }
 
     }
 }
