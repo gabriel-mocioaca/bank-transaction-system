@@ -1,4 +1,4 @@
-@model List<BankingSystem.Models.TransactionViewModel>
+﻿@model List<BankingSystem.Models.TransactionViewModel>
     @{
         ViewBag.Title = "Transactions";
 
@@ -11,9 +11,9 @@
             exchanges = Model.Where(a => a.FromUser == a.ToUser && a.FromCurrency != a.ToCurrency).ToList();
         List<BankingSystem.Models.TransactionViewModel>
             incomingTransactions = Model.Where(a => a.FromUser != a.ToUser && a.ToUser == User.Identity.Name).ToList();
-        //List<BankingSystem.Models.TransactionViewModel>
-        //    outgoingTransactions = Model.Where(a => a.FromUser != a.ToUser && a.FromUser == User.Identity.Name).ToList();
-        //List<BankingSystem.Models.TransactionViewModel> profit = Model.Where(t => t.FromUser == t.ToUser && t.FromCurrency != t.ToCurrency).ToList();
+        List<BankingSystem.Models.TransactionViewModel>
+            outgoingTransactions = Model.Where(a => a.FromUser != a.ToUser && a.FromUser == User.Identity.Name).ToList();
+        List<BankingSystem.Models.TransactionViewModel> profit = Model.Where(t => t.FromUser == t.ToUser && t.FromCurrency != t.ToCurrency).ToList();
 
     }
 
@@ -88,11 +88,11 @@
             </table>
         </div>
 
-        <button class="collapsible2">
+        <button class="collapsible">
             Incoming Transactions
         </button>
         <div class="content" style="background-color:white">
-            <table id="TableAccounts2">
+            <table id="TableAccounts">
                 @{
                     var indexIncomingTransactions = incomingTransactions.Count() - 1;
                     if (indexIncomingTransactions > 0)
@@ -123,11 +123,11 @@
                 }
             </table>
         </div>
-        @*<button class="collapsible2">
+        <button class="collapsible">
             Outgoing Transactions
         </button>
-        <div class="content2" style="background-color:white">
-            <table id="TableAccounts2">
+        <div class="content" style="background-color:white">
+            <table id="TableAccounts">
                 @{
                     var indexOutgoingTrasactions = outgoingTransactions.Count() - 1;
                     if (indexOutgoingTrasactions > 0)
@@ -156,7 +156,7 @@
                     }
                 }
             </table>
-        </div>*@
+        </div>
         @*<button class="collapsible2">
             Profit
         </button>
@@ -209,12 +209,12 @@
         </div>*@
 
         <script>
-            var coll = document.getElementsByClassName("collapsible2");
+            var coll = document.getElementsByClassName("collapsible");
             var i;
 
             for (i = 0; i < coll.length; i++) {
                 coll[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
+                    this.classList.toggle("active2");
                     var content2 = this.nextElementSibling;
                     if (content2.style.display === "block") {
                         content2.style.display = "none";

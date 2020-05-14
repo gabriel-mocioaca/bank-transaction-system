@@ -9,13 +9,11 @@ namespace BankingSystem.Models
 {
     public class PayForAServiceViewModel
     {
-        [Range(1, 100000)]
-        [MaxLength(64)]
+        
         [Display(Name = "Choose an account:")]
         public string SenderAccountId { get; set; }
         
-        [Required]
-        [MaxLength(64)]
+        
         [Display(Name = "Choose a service:")]
         public string ReceiverName { get; set; }
 
@@ -27,7 +25,6 @@ namespace BankingSystem.Models
         [Display(Name = "Enter your bill number:")]
         public string BillNr { get; set; }
 
-        [Range(1, 10000)]
         [Display(Name = "The amount of money you wish to transfer:")]
         public decimal Amount { get; set; }
 

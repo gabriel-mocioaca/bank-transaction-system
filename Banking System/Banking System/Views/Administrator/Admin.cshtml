@@ -6,20 +6,25 @@
 
 <h1>All Users</h1>
 
-@if (Model.Any())
-{
-    foreach (var user in Model)
-    {
-        <div class="card mb-3">
-            <div class="card-header">
-                User Id : @user.UserId
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">@user.UserName</h5>
-            </div>
-            <div class="card-footer">
-                <a asp-action="AccountsList" asp-controller="Administrator" asp-route-id="@user.UserName" class="btn btn-primary">AccountsList</a>
-            </div>
-        </div>
-    }
-}
+<div class=" container" style="padding-top: 70px;">
+    <table class=" table table-striped">
+        <thead class="thead-inverse">
+            <tr>
+                <th scope="col"> Go to account </th>
+                <th scope="col"> # </th>
+                <th scope="col"> Username </th>
+            </tr>
+        </thead>
+        @if (Model.Any())
+        {
+            foreach (var user in Model)
+            {
+    <tr>
+        <td><a asp-action="AccountsList" asp-controller="Administrator" asp-route-id="@user.UserName" class="btn2 btn-info">AccountsList</a></td>
+        <td>@user.UserId</td>
+        <td>@user.UserName</td>
+    </tr>              
+            }
+        }
+    </table>
+</div>
