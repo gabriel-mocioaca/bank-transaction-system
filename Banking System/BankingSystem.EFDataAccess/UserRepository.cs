@@ -25,7 +25,6 @@ namespace BankingSystem.EFDataAccess
         }
         public int GetAccountIdByCurrency(string userId, string currency)
         {
-
             List<UserBankAccounts> currentUserBankAccouts = dbContext.UserBankAccounts.Where(u => u.UserId == userId).ToList();
             foreach (var item in currentUserBankAccouts)
             {
@@ -35,10 +34,8 @@ namespace BankingSystem.EFDataAccess
             return 0;
         }
 
-
         public UserBankAccounts GetAccountByCurrency(string userId, string currency)
         {
-
             List<UserBankAccounts> currentUserBankAccouts = dbContext.UserBankAccounts.Where(u => u.UserId == userId).ToList();
             foreach (var item in currentUserBankAccouts)
             {
@@ -87,11 +84,11 @@ namespace BankingSystem.EFDataAccess
             return false;
         }
 
-        public string GetAddress(string user)
+        /*public string GetAddress(string user)
         {
             var user1 = dbContext.Users.Where(x => x.UserId == user).SingleOrDefault();
             return user1.Address;
-        }
+        }*/
 
         public void SetAddress(string userId, string address)
         {
@@ -100,5 +97,19 @@ namespace BankingSystem.EFDataAccess
             this.Update(user);
         }
 
+        public Task<string> GetAddress(string user)
+        {
+
+
+            var user1 = dbContext.Users.Where(x => x.UserId == user).SingleOrDefault();
+
+            return Task.FromResult<string>(user1.Address);
+        }
+
+        public async Task<string> GetAsynsAdress(string user)
+        {
+            string adress = await GetAddress(user);
+            return adress;
+        }
     }
 }

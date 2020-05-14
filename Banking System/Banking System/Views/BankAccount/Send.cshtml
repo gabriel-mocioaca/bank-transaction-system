@@ -2,7 +2,6 @@
 @{
     ViewData["Title"] = "Send";
 }
-
 <h2>Send money to another person</h2>
 <hr />
 
@@ -25,7 +24,7 @@
             <span asp-validation-for="Amount" class="text-danger"></span>
         </div>
         <div class="col-2">
-            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="submit" class="btn blue">Send</button>
             @if (!string.IsNullOrEmpty(ViewBag.message))
             {
                 <span class="alert-success">@ViewBag.message</span>
@@ -37,4 +36,3 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
-

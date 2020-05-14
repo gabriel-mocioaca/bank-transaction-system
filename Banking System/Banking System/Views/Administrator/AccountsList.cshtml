@@ -1,7 +1,26 @@
-﻿
+﻿@model List<BankingSystem.ApplicationLogic.Data.UserBankAccounts>
 @{
     ViewData["Title"] = "AccountsList";
 }
 
-<h2>AccountsList</h2>
-
+    <div class=" container" style="padding-top: 70px;">
+        <table class=" table table-striped">
+            <thead class="thead-inverse">
+                <tr>
+                    <th scope="col"> Account number </th>
+                    <th scope="col"> Amount </th>
+                    <th scope="col"> Currency </th>
+                </tr>
+            </thead>
+            @{
+                @foreach (var account in Model)
+                {
+                    <tr>
+                        <td>@account.AccountId</td>
+                        <td>@account.Amount</td>
+                        <td>@account.Currency</td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
