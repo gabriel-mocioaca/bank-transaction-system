@@ -1,7 +1,6 @@
 Banking System/Banking System/obj/
-Banking System/BankingSystem.ApplicationLogic/obj/Debug/netstandard2.0/BankingSystem.ApplicationLogic.AssemblyInfo.cs
-Banking System/BankingSystem.ApplicationLogic/obj/Debug/netstandard2.0/BankingSystem.ApplicationLogic.AssemblyInfoInputs.cache
-Banking System/BankingSystem.EFDataAccess/obj/Debug/netstandard2.0/BankingSystem.EFDataAccess.AssemblyInfo.cs
-Banking System/BankingSystem.EFDataAccess/obj/Debug/netstandard2.0/BankingSystem.EFDataAccess.AssemblyInfoInputs.cache
-Banking System/BankingSystemExchange/obj/Debug/netcoreapp2.1/BankingSystemExchange.AssemblyInfo.cs
-Banking System/BankingSystemExchange/obj/Debug/netcoreapp2.1/BankingSystemExchange.AssemblyInfoInputs.cache
+Banking System/.vs/
+Banking System/BankingSystem.ApplicationLogic/obj/
+Banking System/BankingSystem.ApplicationLogin.Tests/obj/
+Banking System/BankingSystem.EFDataAccess/obj/
+Banking System/BankingSystemExchange/obj/

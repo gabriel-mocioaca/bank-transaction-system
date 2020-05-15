@@ -416,5 +416,106 @@ namespace BankingSystem.ApplicationLogic.Tests.Services
             });
         }
 
+        [TestMethod]
+        public void GetAccountIdByCurrency_ThrowsException_WhenCurrencyIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            string UserId = "userId";
+            string nullCurrency = null;
+            string existingCurrency = "EUR";
+            Assert.ThrowsException<Exception>(() => {
+                userService.GetAccountIdByCurrency(UserId, nullCurrency);
+            });
+        }
+
+        [TestMethod]
+        public void GetAccountIdByCurrency_ThrowsException_WhenUserIdIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            string nullUserId = null;
+            string existingUserId = "userId";
+            string nullCurrency = "EUR";
+            Assert.ThrowsException<Exception>(() => {
+                userService.GetAccountIdByCurrency(nullUserId, nullCurrency);
+            });
+        }
+
+        [TestMethod]
+        public void GetAllUsers_ThrowsException_WhenUsersListIsEmpty()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            List<User> usersList = null;
+            userRepoMock.Setup(userRepo => userRepo.getAllUsers())
+                .Returns(usersList);
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.getAllUsers();
+            });
+        }
+
+        [TestMethod]
+        public void GetUserByName_ThrowsException_WhenReceiverNameIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            string nullReceiverName = null;
+            string existingReceiverName = "receiverName";
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.GetUserByName(nullReceiverName);
+            });
+        }
+
+        [TestMethod]
+        public void GetUserByName_EntityNotFoundException_WhenUserDoesNotExist()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+            string existingReceiverName = "receiverName";
+
+
+            User existingUser = new User();
+            User nonExistingUser = null;
+
+
+            userRepoMock.Setup(userRepo => userRepo.GetUserByName(existingReceiverName)).Returns(nonExistingUser);
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+            Assert.ThrowsException<EntityNotFoundException>(() => {
+                userService.GetUserByName(existingReceiverName);
+            });
+        }
+
+        [TestMethod]
+        public void GetCurrentUserAccounts_ThrowsException_WhenUserIdIsNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+
+            string existingUserId = "userId";
+            string nonExistingUserId = null;
+
+            Assert.ThrowsException<Exception>(() => {
+                userService.GetCurrentUserAccounts(nonExistingUserId);
+            });
+        }
     }
 }
