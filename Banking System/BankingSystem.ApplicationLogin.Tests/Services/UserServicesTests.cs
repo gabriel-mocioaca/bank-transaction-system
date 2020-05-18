@@ -517,5 +517,84 @@ namespace BankingSystem.ApplicationLogic.Tests.Services
                 userService.GetCurrentUserAccounts(nonExistingUserId);
             });
         }
+
+
+        [TestMethod]
+        public void GetAccount_Returns_WhenUserExist()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            var nonExistingUserId = "2cb5f5c9-30d9-4886-a84e-df7aa66b37bf";
+            var existingUserId = "2cb5f5c9-30d9-1986-a84e-df7aa66b37bf";
+
+            var existingCurrency = "EUR";
+
+            Exception throwException = null;
+            var userBankAccount = new UserBankAccounts
+            {
+                AccountId = 1,
+                UserId = existingUserId,
+                Amount = 1,
+                Currency = existingCurrency
+            };
+            userRepoMock.Setup(userRepo => userRepo.GetAccount(existingUserId, existingCurrency)).Returns(userBankAccount);
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            UserBankAccounts userBank = null;
+            try
+            {
+                userBank = userService.GetAccount(existingUserId, existingCurrency);
+            }
+            catch (Exception e)
+            {
+                throwException = e;
+            }
+            Assert.IsNull(throwException, $"Exception was thrown");
+            Assert.IsNotNull(userBank);
+
+        }
+
+
+
+        [TestMethod]
+        public void GetAccountByCurrency_Return_WhenAccountExist()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            var nonExistingUserId = "2cb5f5c9-30d9-4886-a84e-df7aa66b37bf";
+            var existingUserId = "2cb5f5c9-30d9-1986-a84e-df7aa66b37bf";
+            Exception throwException = null;
+            var existingCurrency = "EUR";
+            var nonExistingCurrency = "asdsad";
+
+            var userBankAccount = new UserBankAccounts
+            {
+                AccountId = 1,
+                UserId = existingUserId,
+                Amount = 1,
+                Currency = existingCurrency
+            };
+            userRepoMock.Setup(userRepo => userRepo.GetAccountByCurrency(existingUserId, existingCurrency)).Returns(userBankAccount);
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+
+            UserBankAccounts userBank = null;
+            try
+            {
+                userBank = userService.GetAccountByCurrency(existingUserId, existingCurrency);
+            }
+            catch (Exception e)
+            {
+                throwException = e;
+            }
+            Assert.IsNull(throwException, $"Exception was thrown");
+            Assert.IsNotNull(userBank);
+        }
+
+
+
     }
 }
