@@ -643,8 +643,89 @@ namespace BankingSystem.ApplicationLogic.Tests.Services
             //assert
             Assert.IsNull(throwException, $"Exception was thrown");
             Assert.IsNotNull(accountId);
+        }//Petcu
+
+        [TestMethod]
+        public void GetAllAccounts_Returns_WhenUserHasAccounts()////////C1///////////
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            var nonExistingUserId = "2cb5f5c9-30d9-4886-a84e-df7aa66b37bf";
+            var existingUserId = "2cb5f5c9-30d9-1986-a84e-df7aa66b37bf";
+
+            List<UserBankAccounts> nonExistingUserList = null;
+            List<UserBankAccounts> existingUserList = new List<UserBankAccounts>();
+            Exception throwException = null;
+
+            var userBankAccount = new UserBankAccounts
+            {
+                AccountId = 1,
+                UserId = existingUserId,
+                Amount = 1,
+                Currency = "EUR"
+            };
+
+            existingUserList.Add(userBankAccount);
+            userRepoMock.Setup(userRepo => userRepo.GetAllAccounts(existingUserId)).Returns(existingUserList);
+
+            userRepoMock.Setup(userRepo => userRepo.GetAllAccounts(nonExistingUserId)).Returns(nonExistingUserList);
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            IList<UserBankAccounts> userBank = null;
+            try
+            {
+                userBank = userService.GetAllAccounts(existingUserId);
+            }
+            catch (Exception e)
+            {
+                throwException = e;
+            }
+            Assert.IsNull(throwException, $"Exception was thrown");
+            Assert.IsNotNull(userBank);
         }
 
 
+
+        [TestMethod]
+        public void GetUserId_Return_WhenUserExist()///////C2//////////
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+            Exception throwException = null;
+
+            User nonExistingReceiverUser = null;
+
+            User existingReceiverUser = new User
+            {
+                UserId = "useruseruseruser",
+                UserName = "useruser",
+                PhoneNo = "64738",
+                Address = "user"
+            };
+
+            string existingUserId = "das";
+            string nonExistingUserId = null;
+
+            userRepoMock.Setup(userRepo => userRepo.GetUserId(nonExistingReceiverUser)).Returns(nonExistingUserId);
+            userRepoMock.Setup(userRepo => userRepo.GetUserId(existingReceiverUser)).Returns(existingUserId);
+
+            string userId = null;
+
+            try
+            {
+                userId = userService.GetUserId(existingReceiverUser);
+            }
+            catch (Exception e)
+            {
+                throwException = e;
+            }
+            //assert
+            Assert.IsNull(throwException, $"Exception was thrown");
+            Assert.IsNotNull(userId);
+        }
     }
 }
