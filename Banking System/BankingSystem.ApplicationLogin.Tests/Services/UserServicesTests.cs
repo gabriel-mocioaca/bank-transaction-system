@@ -593,7 +593,57 @@ namespace BankingSystem.ApplicationLogic.Tests.Services
             Assert.IsNull(throwException, $"Exception was thrown");
             Assert.IsNotNull(userBank);
         }
+        [TestMethod]
+        public void GetAccountAmount_Returns_WhenCurrencyIsNotNull()//
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
 
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            Exception throwException = null;
+            string userId = "ASdasd";
+            string currency = "eur";
+            decimal amount = 0;
+
+            try
+            {
+                amount = userService.GetAccountAmount(userId, currency);
+            }
+            catch (Exception e)
+            {
+                throwException = e;
+            }
+            Assert.IsNull(throwException, $"Exception was thrown");
+            Assert.IsNotNull(amount);
+        }
+
+
+        [TestMethod]
+        public void GetAccountIdByCurrency_Return_WhenUserIdIsNotNull()//
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+            Exception throwException = null;
+            string nullUserId = null;
+            string existingUserId = "userId";
+            string Currency = "EUR";
+
+            int accountId = 0;
+            try
+            {
+                accountId = userService.GetAccountIdByCurrency(existingUserId, Currency);
+            }
+            catch (Exception e)
+            {
+                throwException = e;
+            }
+            //assert
+            Assert.IsNull(throwException, $"Exception was thrown");
+            Assert.IsNotNull(accountId);
+        }
 
 
     }
