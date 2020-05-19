@@ -727,5 +727,63 @@ namespace BankingSystem.ApplicationLogic.Tests.Services
             Assert.IsNull(throwException, $"Exception was thrown");
             Assert.IsNotNull(userId);
         }
+
+        [TestMethod]
+        public void FirstTimeUser_ReturnsUser_WhenUserIdIsNotNull()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+
+            Exception throwException = null;
+            string userId = "hgfhgf";
+            bool ok = false;
+
+
+            try
+            {
+                ok = userService.FirstTimeUser(userId);
+            }
+            catch (Exception e)
+            {
+                throwException = e;
+            }
+            //assert
+            Assert.IsNull(throwException, $"Exception was thrown");
+            Assert.IsNotNull(ok);
+        }
+
+
+        [TestMethod]
+        public void GetUserByName_ReturnsUser_WhenUserExist()
+        {
+            Mock<IUserRepository> userRepoMock = new Mock<IUserRepository>();
+            Mock<IUsersBankAccountRepository> userBankAccountRepoMock = new Mock<IUsersBankAccountRepository>();
+            string existingReceiverName = "receiverName";
+
+
+            User existingUser = new User();
+            User nonExistingUser = null;
+            Exception throwException = null;
+
+            userRepoMock.Setup(userRepo => userRepo.GetUserByName(existingReceiverName)).Returns(existingUser);
+
+            UserService userService = new UserService(userRepoMock.Object, userBankAccountRepoMock.Object);
+            User user = null;
+
+
+            try
+            {
+                user = userService.GetUserByName(existingReceiverName);
+            }
+            catch (Exception e)
+            {
+                throwException = e;
+            }
+            //assert
+            Assert.IsNull(throwException, $"Exception was thrown");
+            Assert.IsNotNull(user);
+        }
     }
 }
